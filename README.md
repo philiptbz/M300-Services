@@ -192,6 +192,8 @@ Eine Firewall hilft, das Netzwerk vor Eindringlingen zu schützen, aber wenn ein
 
 ### 1. Bestehende vm aus Vagrant-Cloud einrichten
 
+### 2. Kennt die Vagrant-Befehle
+
 Befehl            | Funktion
 ----------------- | -------------
 `vagrant init`    | Erstellt eine VM
