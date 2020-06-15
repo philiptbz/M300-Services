@@ -18,3 +18,8 @@ Umbebung auf eigenem Notebook eingerichtet und funktionsfähig
 - [x] [3. Visualstudio-Code](#3-visualstudio-code)
 - [x] [4. Git-Client](#4-git-client)
 - [x] [5. SSH-Key für Client erstellen](#5-ssh-key-für-client-erstellen)
+
+### 1. Virtualbox
+Aufgrund unseres Auftrages wählte ich für die Umsetzung die kostenlose Virtualisierungssoftware VirtualBox. Ich habe diese Software bereits öfters benutzt und habe diese auch schon auf meinem Notebook installiert. 
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild1.png "Virtualbox")
