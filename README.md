@@ -224,7 +224,7 @@ Befehl            | Funktion
 **Netzwerkplan**
 Logischer Netzwerkplan:
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/proxy.PNG "Netzwerkplan")
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild24.PNG "Netzwerkplan")
 
 Pysischer Netzwerkplan:
 Da wir hier mit einer Virtualisierung arbeiten, würde ein pysischer Netzwerkplan sehr mager aussehen. Die Firewall, der Proxy sowie der Web-Server sind keine pysische Geräte sondern befinden sich virtuell auf dem Laptop. 
