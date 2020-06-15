@@ -49,3 +49,15 @@ Diese Erweiterung bietet viele Features, die beim Dokumentieren mit Markdown nü
 - Vscode-pdf
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild6.png "vscode")
+
+### 4. Git-Client
+Auf dem folgenden Bild sehen sie die installierte Version des Git-Clients
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild7.png "Git-Client")
+
+### 5. SSH-Key für Client erstellen
+In den beiden Screenshots unterhalb ist der Nachweiss, dass der SSH-Key erstellt wurde. Im ersten Screenshot ist der verknüpfte SSH-Key an meinem GitHub-Account zu sehen. Auf dem zweiten Bild führe ich den ssh-keygen Befehl in der Git-Bash aus.
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild8.png "SSH-Key1")
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild9.png "SSH-Key2")
