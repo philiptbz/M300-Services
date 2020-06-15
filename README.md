@@ -23,3 +23,26 @@ Umbebung auf eigenem Notebook eingerichtet und funktionsfähig
 Aufgrund unseres Auftrages wählte ich für die Umsetzung die kostenlose Virtualisierungssoftware VirtualBox. Ich habe diese Software bereits öfters benutzt und habe diese auch schon auf meinem Notebook installiert. 
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild1.png "Virtualbox")
+
+### 2. Vagrant
+Auf dem folgenden Bild ist die installierte Vagrant Version zu sehen
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild2.png "Vagrant")
+
+### 3. Visualstudio-Code
+
+Auch Visual Studio Code, wendete ich bereits einige Male im Betrieb sowie Zuhause an. Die Installation musste ich also auch hier nicht mehr vornehmen. 
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild3.png "VSC")
+
+Ebenfalls fügte ich 3 weitere Erweiterungen hinzu: 
+- Vagranfile Support
+Diese Erweiterung bietet Syntax-Highliting für das Vagrantfile
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild4.png "Vagrantsupport")
+
+- Markdown All in One
+Diese Erweiterung bietet viele Features, die beim Dokumentieren mit Markdown nützlich sind. 
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild5.png "Markdownsupport")
+
+- Vscode-pdf
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild6.png "vscode")
