@@ -100,7 +100,7 @@ Von Vagrant habe ich, dass erste Mal in Form dieses Modules gehört. Ich bin zuv
 ### Verionsverwaltung/Git
 Git wurde von Linus Torvalds entwickelt und ist ein Versionorientiertes Programm. Es ermöglicht mehreren Benutzern gleichzeitig, eine Datei zu bearbeiten, ohne dass man sich Probleme macht, indem man Elemente der Datei überschreibt.
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild11.png "Git")
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild11.jpg "Git")
 
 Dadurch ergeben sich am Repo für Bearbeiter folgende Möglichkeiten:
 •	Die eigene Arbeit kann einfach wieder in die zentrale Basis integriert werden.
