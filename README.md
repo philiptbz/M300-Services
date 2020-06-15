@@ -61,3 +61,31 @@ In den beiden Screenshots unterhalb ist der Nachweiss, dass der SSH-Key erstellt
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild8.png "SSH-Key1")
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild9.png "SSH-Key2")
+
+## 2. Kriterium
+Eigene Lernumgebung (PLE) ist eingerichtet
+- [x] [1. GitHub oder Gitlab-Account ist erstellt](#1-github-oder-gitlab-account-ist-erstellt)
+- [x] [2. Git-Client wurde verwendet](#2-git-client-wurde-verwendet)
+- [x] [3. Dokumentation ist als Mark Down vorhanden](#3-dokumentation-ist-als-mark-down-vorhanden)
+- [x] [4. Mark down-Editor ausgewählt und eingerichtet](#4-mark-down-editor-ausgewählt-und-eingerichtet)
+- [x] [5. Persönlicher Wissenstand](#5-persönlicher-wissenstand)
+- [x] [6. Wichtige Lernschritte sind dokumentiert](#6-wichtige-lernschritte-sind-dokumentiert)
+
+### 1. GitHub oder Gitlab-Account ist erstellt
+Ich erstellte ein GitHub Account ![GitHub philiptbz](https://github.com/philiptbz)
+
+### 2. Git-Client wurde verwendet
+Anhand des Screenshots wird bewiesen, dass der Git-Client verwendet wurde.
+
+![](https://github.com/tbztim/M300-Services/blob/master/00-Bilder/bild10.png "Git-Client")
+
+### 3. Dokumentation ist als Mark Down vorhanden
+Ich habe die Dokumentation in der README.md Datei erfasst. Dass diese in Mark Down geschrieben wurde sollte ersichtlich sein.
+
+### 4. Mark down-Editor ausgewählt und eingerichtet
+Ich habe in diesem Fall Visual Studio Code als Mark Down Editor benutzt. Ich habe die README.md Datei in Visual Studio Code bearbeitet, gespeichert, commited und gepusht. 
+
+### 5. Persönlicher Wissenstand
+
+
+### 6. Wichtige Lernschritte sind dokumentiert
