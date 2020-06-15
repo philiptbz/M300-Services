@@ -73,12 +73,12 @@ Eigene Lernumgebung (PLE) ist eingerichtet
 - [x] [6. Wichtige Lernschritte sind dokumentiert](#6-wichtige-lernschritte-sind-dokumentiert)
 
 ### 1. GitHub oder Gitlab-Account ist erstellt
-Ich erstellte ein GitHub Account ![GitHub philiptbz] https://github.com/philiptbz
+Ich erstellte ein GitHub Account: https://github.com/philiptbz
 
 ### 2. Git-Client wurde verwendet
 Anhand des Screenshots wird bewiesen, dass der Git-Client verwendet wurde.
 
-![](https://github.com/tbztim/M300-Services/blob/master/00-Bilder/bild10.png "Git-Client")
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild10.png "Git-Client")
 
 ### 3. Dokumentation ist als Mark Down vorhanden
 Ich habe die Dokumentation in der README.md Datei erfasst. Dass diese in Mark Down geschrieben wurde sollte ersichtlich sein.
