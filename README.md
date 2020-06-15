@@ -11,7 +11,8 @@ In der folgenden Dokumentation werde ich den Leistungsnachweis zu meiner Arbeit 
 - [5. Kriterium](#5-kriterium)
 
 
-## 1. Kriterium / Umbebung auf eigenem Notebook eingerichtet und funktionsfähig
+## 1. Kriterium 
+Umbebung auf eigenem Notebook eingerichtet und funktionsfähig
 - [x] [1. VirtualBox](#1-virtualbox)
 - [x] [2. Vagrant](#2-vagrant)
 - [x] [3. Visualstudio-Code](#3-visualstudio-code)
