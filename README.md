@@ -247,7 +247,7 @@ Danach kann die VM mit dem Befehl vagrant up gestartet werden.
 
 ### 4. Funktionsweise getestet inkl. Dokumentation der Testfälle
 
-### 5. andere, vorgefertigte vm auf eigenem Notebook aufgesetzt
+### 5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt
 
 ### 6. Projekt mit Git und Mark Down dokumentiert
 
