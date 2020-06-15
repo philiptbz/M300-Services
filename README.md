@@ -38,11 +38,14 @@ Auch Visual Studio Code, wendete ich bereits einige Male im Betrieb sowie Zuhaus
 Ebenfalls fügte ich 3 weitere Erweiterungen hinzu: 
 - Vagranfile Support
 Diese Erweiterung bietet Syntax-Highliting für das Vagrantfile
+
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild4.png "Vagrantsupport")
 
 - Markdown All in One
 Diese Erweiterung bietet viele Features, die beim Dokumentieren mit Markdown nützlich sind. 
+
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild5.png "Markdownsupport")
 
 - Vscode-pdf
+- 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild6.png "vscode")
