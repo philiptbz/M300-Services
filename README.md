@@ -180,3 +180,39 @@ Eine Firewall hilft, das Netzwerk vor Eindringlingen zu schützen, aber wenn ein
 
 
 ### 6. Wichtige Lernschritte sind dokumentiert
+
+
+## 3. Kriterium
+- [x] [1. Bestehende vm aus Vagrant-Cloud einrichten](#1-bestehende-vm-aus-vagrant-cloud-einrichten)
+- [x] [2. Kennt die Vagrant-Befehle](#2-kennt-die-vagrant-befehle)
+- [x] [3. Eingerichtete Umgebung ist dokumentiert](#3-eingerichtete-umgebung-ist-dokumentiert)
+- [x] [4. Funktionsweise getestet inkl. Dokumentation der Testfälle](#4-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
+- [x] [5. andere, vorgefertigte vm auf eigenem Notebook aufgesetzt](#5-andere-vorgefertigte-vm-auf-eigenem-notebook-aufgesetzt)
+- [x] [6. Projekt mit Git und Mark Down dokumentiert](#6-projekt-mit-git-und-mark-down-dokumentiert)
+
+### 1. Bestehende vm aus Vagrant-Cloud einrichten
+
+Befehl            | Funktion
+----------------- | -------------
+`vagrant init`    | Erstellt eine VM
+`vagrant up`	  | Startet vagrant Umgebung
+`vagrant resume`  | Setzt eine suspendierte Maschine fort.
+`vagrant reload`  | Startet die VM neu, liest das Config File neu ein
+`vagrant ssh`     | Verbindet sich per SSH zur VM
+`vagrant halt`    | stoppt die VM
+`vagrant suspend` | suspendiert eine VM
+`vagrant destroy` | Zerstört / löscht die VM
+`vagrant provision` | Änderungen des Vagrantfiles werden übernommen
+`vagrant -v`      | Zeigt die vagrant Version an
+`vagrant status`  | Gibt den Stataus einer VM aus.
+
+Weitere nützliche Commands im Zusammenhang mit der Arbeit
+
+Befehl            | Funktion
+----------------- | -------------
+`eval 'ssh-agent'`    | Hintergrundprogramm, das Passwörter für private SSH-Schlüssel behandelt, aufrufen
+`ssh-add`	  | Fordert den Benutzer zur Eingabe eines Passworts für den privaten Schlüssel auf und fügt es der Liste hinzu, die vom SSH-Agenten verwaltet wird.
+`code`  | Visual Studio Code öffnen.
+`git add`  | Änderungen im Verzeichnis wurden gespeichert.
+`git commit`     | Änderunge wurden akzeptiert.
+`git push`    | Änderunge wurden an Git gesendet und veröffentlicht.
