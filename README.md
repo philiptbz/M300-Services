@@ -62,6 +62,7 @@ In den beiden Screenshots unterhalb ist der Nachweiss, dass der SSH-Key erstellt
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild9.png "SSH-Key2")
 
+
 ## 2. Kriterium
 Eigene Lernumgebung (PLE) ist eingerichtet
 - [x] [1. GitHub oder Gitlab-Account ist erstellt](#1-github-oder-gitlab-account-ist-erstellt)
@@ -72,7 +73,7 @@ Eigene Lernumgebung (PLE) ist eingerichtet
 - [x] [6. Wichtige Lernschritte sind dokumentiert](#6-wichtige-lernschritte-sind-dokumentiert)
 
 ### 1. GitHub oder Gitlab-Account ist erstellt
-Ich erstellte ein GitHub Account ![GitHub philiptbz](https://github.com/philiptbz)
+Ich erstellte ein GitHub Account ![GitHub philiptbz] https://github.com/philiptbz
 
 ### 2. Git-Client wurde verwendet
 Anhand des Screenshots wird bewiesen, dass der Git-Client verwendet wurde.
