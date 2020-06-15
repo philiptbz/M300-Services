@@ -88,16 +88,16 @@ Ich habe in diesem Fall Visual Studio Code als Mark Down Editor benutzt. Ich hab
 
 ### 5. Persönlicher Wissenstand
 
-Linux
+### Linux
 Aufgrund der vorgängigen Module und ÜK’s kenne ich mich mit Linux gut aus. Ich habe bereits diverse Dienste und Applikationen auf der Linux Umgebung aufgesetzt und installiert. Auch mit den meisten Command bin ich vertraut und weiss auch wie und wo nachschauen, falls ich einen Command nicht kenne. 
 
-Virtualisierung
+### Virtualisierung
 Mit der Virtualisierung hatte ich mich aufgrund des letzten ÜKs stark mit auseinandergesetzt. Jedoch habe ich bis jetzt erst Erfahrung mit dem Client sowie Server Virtualisierung machen können. Ich habe eine Zusammenfassung über mehrere Themen der Virtualisierung gemacht diese kann hier eingesehen werden.
 
-Vagrant
+### Vagrant
 Von Vagrant habe ich, dass erste Mal in Form dieses Modules gehört. Ich bin zuvor noch nie mit einer solchen Virtualisierung / Automatisierung in Kontakt gekommen. Im Verlauf der LB2 bin ich jedoch immer besser mit der Anwendung zurechtgekommen. Ebenfalls informierte ich mich aus Neugier noch wie das Konzept hinter Vagrant funktioniert und konnte so einige wichtige Lernschritte sammeln. Ich bin überzeugt von Vagrant und sehe darin einen grossen Vorteil sowie ein riesiges Entwicklungspotenzial. 
 
-Verionsverwaltung/Git
+### Verionsverwaltung/Git
 Git wurde von Linus Torvalds entwickelt und ist ein Versionorientiertes Programm. Es ermöglicht mehreren Benutzern gleichzeitig, eine Datei zu bearbeiten, ohne dass man sich Probleme macht, indem man Elemente der Datei überschreibt.
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild11.png "Git")
@@ -109,10 +109,10 @@ Dadurch ergeben sich am Repo für Bearbeiter folgende Möglichkeiten:
 •	Bei Bedarf kann zu früheren Versionen zurückgekehrt werden oder simultan an verschiedenen Versionen gearbeitet werden (auch "Branches" genannt).
 Git bietet aber noch viel mehr, welche Eigenschaften es anderen Systemen überlegen macht kann
 
-Mark Down
+### Mark Down
 Markdown ist eine vereinfachte aufzeichnungssprache. Das Ziel ist es ein Format zu erstellen, dass man es ohne konvertierung lesen kann. 2004 wurde es entworfen. Diese Dokumentation wurde mit Markdown geschrieben. Man kann Markdown auf jedem Texteditor nutzen. Ich habe in diesem Projekt, dass erste mal mit Morkdown gearbeitet und finde es eine tolle Alternative zu den herkömmlichen Textformaten. 
 
-Systemsicherheit
+### Systemsicherheit
 Was ist ein System?
 Jedes System hat eine Systemgrenze. Als erstes definieren, was ist meine Systemgrenze (Ganz genau definieren). Über die Systemgrenze hat es Schnittstellen gegen aussen ins Netz. Im System gibt es Elemente. Unter diesen Elementen bestehen Beziehungen. Man definiert eine Systemgrenze anhand eines Visios und einer Beschreibung. Doku der Schnittstelle:  10 Gbit/s, interface, Ethernet, 5 VLAN.
 
@@ -124,7 +124,7 @@ Systemsicherheit besteht aus:
 
 Auch in meiner Umgebung spielt die Systemsicherheit eine wichtige Rolle. Ich werde zwei Begriffe die ebenfalls in meiner Arbeit vorkommen werden erklären. 
 
-Proxy:
+### Proxy:
 Ein Proxy-Server ist ein Computer oder ein Softwaresystem, das als Vermittler zwischen einer Endpunktvorrichtung fungiert. Diese Verbindung kann beispielsweise zwischen einem Computer und einem Webserver sein, von dem ein Benutzer einen Dienst anfordert. Der Proxy-Server kann sich auf derselben Maschine wie ein Firewall-Server befinden oder auf einem separaten Server, der Anfragen über die Firewall weiterleitet.
 
 Wofür wird Proxy eingesetzt?
@@ -144,7 +144,7 @@ Um interne Inhalte an Internetnutzer zu streamen.
 Um den Zugriff auf eine Website zu deaktivieren, z.B. wenn ein ISP oder eine Regierung eine Website blockieren möchte.
 Websites können aus mehr oder weniger legitimen Gründen blockiert werden. Reverse Proxies können verwendet werden, um den Zugang zu illegalen oder urheberrechtlich geschützten Inhalten zu verhindern. Manchmal sind diese Gründe gerechtfertigt, aber manchmal ist die Rechtfertigung zweifelhaft. Sie können auch verhindern, dass Benutzer auf Websites zugreifen, auf denen sie Informationen über Regierungs- oder Branchenmaßnahmen preisgeben können. Die Sperrung des Zugangs zu solchen Websites kann das Recht auf freie Meinungsäußerung verletzen.
 
-Firewall
+### Firewall
 Eine Firewall ist ein Netzwerksicherheitssystem, das den ein- und ausgehenden Netzwerkverkehr basierend auf vorgegebenen Sicherheitsregeln überwacht und kontrolliert. Eine Firewall errichtet typischerweise eine Barriere zwischen einem vertrauenswürdigen internen Netzwerk und einem nicht vertrauenswürdigen externen Netzwerk, wie beispielsweise dem Internet.
 Firewalls werden oft entweder als Netzwerk-Firewalls oder als hostbasierte Firewalls kategorisiert. Netzwerk-Firewalls filtern den Datenverkehr zwischen zwei oder mehr Netzwerken und laufen auf Netzwerkhardware. Host-basierte Firewalls laufen auf Host-Computern und steuern den Netzwerkverkehr innerhalb und außerhalb dieser Computer.
 Firewalls können entweder Software oder Hardware sein, obwohl es am besten ist, beides zu haben. Eine Software-Firewall ist ein auf jedem Computer installiertes Programm, das den Datenverkehr über Portnummern und Anwendungen regelt, während eine physische Firewall ein Gerät ist, das zwischen Ihrem Netzwerk und dem Gateway installiert wird.
