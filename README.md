@@ -218,3 +218,27 @@ Befehl            | Funktion
 `git add`  | Änderungen im Verzeichnis wurden gespeichert.
 `git commit`     | Änderunge wurden akzeptiert.
 `git push`    | Änderunge wurden an Git gesendet und veröffentlicht.
+
+### 3. Eingerichtete Umgebung ist dokumentiert
+**Netzwerkplan**
+Logischer Netzwerkplan:
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild22.png "Netzwerkplan")
+
+Pysischer Netzwerkplan:
+Da wir hier mit einer Virtualisierung arbeiten, würde ein pysischer Netzwerkplan sehr mager aussehen. Die Firewall, der Proxy sowie der Web-Server sind keine pysische Geräte sondern befinden sich virtuell auf dem Laptop. 
+
+Umgebungsvariabeln:
+Zuerst müssen entweder im Explorer oder in der Git-Bash ins richtige Verzeichnis gewechselt werden.
+In meinem Falle befindet sich die VM, im Verzeichniss: C:\Daten\vm
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild23.png "cd")
+
+Danach kann die VM mit dem Befehl vagrant up gestartet werden.
+
+**Sicherheitsaspekte**
+
+-	Lediglich der Port 80 des Web-Frontends und der Port 8080 der API wurden nach Aussen freigegeben.
+-	Durch den Reverse Proxy sind die Devices im LAN von aussen nicht einsehbar.
+-	Mit den strengen Firewall Regeln können wir das eindringen über offene Ports grösstenteils vermeiden.
+-	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
