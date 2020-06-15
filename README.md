@@ -47,5 +47,5 @@ Diese Erweiterung bietet viele Features, die beim Dokumentieren mit Markdown nü
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild5.png "Markdownsupport")
 
 - Vscode-pdf
-- 
+
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild6.png "vscode")
