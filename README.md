@@ -188,7 +188,6 @@ Eine Firewall hilft, das Netzwerk vor Eindringlingen zu schützen, aber wenn ein
 - [x] [3. Eingerichtete Umgebung ist dokumentiert](#3-eingerichtete-umgebung-ist-dokumentiert)
 - [x] [4. Funktionsweise getestet inkl. Dokumentation der Testfälle](#4-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
 - [x] [5. andere, vorgefertigte vm auf eigenem Notebook aufgesetzt](#5-andere-vorgefertigte-vm-auf-eigenem-notebook-aufgesetzt)
-- [x] [6. Projekt mit Git und Mark Down dokumentiert](#6-projekt-mit-git-und-mark-down-dokumentiert)
 
 ### 1. Bestehende vm aus Vagrant-Cloud einrichten
 
@@ -265,7 +264,12 @@ LDAP wurde eingerichtet und das einloggen ist möglich. | ![](https://github.com
 
 ### 5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt
 
-### 6. Projekt mit Git und Mark Down dokumentiert
+Ich habe noch eine weitere VM auf dem Notebook aufgesetzt. Hierbei habe ich das Vagrant-File, welches unter dem folgenden Pfad liegt ausgeführt.
+
+![DB-Beispiel-VM](https://github.com/mc-b/M300/tree/master/vagrant/db)
+
+Diese VM habe ich mit dem Befehl `vagrant up` gestartet. Auch hier musste ich im Verzeichnis sein, in dem das Vagrant-File vorhanden war. 
+
 
 ## 4. Kriterium
 - [x] [1. Firewall eingerichtet inkl. Rules](#1-firewall-eingerichtet-inkl-rules)
