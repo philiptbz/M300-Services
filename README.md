@@ -251,6 +251,20 @@ Danach kann die VM mit dem Befehl vagrant up gestartet werden.
 
 ### 4. Funktionsweise getestet inkl. Dokumentation der Testfälle
 
+Testfall            | Resultat
+----------------- | -------------
+Die VM kann via Vagrant aufgesetzt werden sowie über Vagrant auf die VM zugegriffen werden.    | Erstellt eine VM
+`vagrant up`	  | Startet vagrant Umgebung
+`vagrant resume`  | Setzt eine suspendierte Maschine fort.
+`vagrant reload`  | Startet die VM neu, liest das Config File neu ein
+`vagrant ssh`     | Verbindet sich per SSH zur VM
+`vagrant halt`    | stoppt die VM
+`vagrant suspend` | suspendiert eine VM
+`vagrant destroy` | Zerstört / löscht die VM
+`vagrant provision` | Änderungen des Vagrantfiles werden übernommen
+`vagrant -v`      | Zeigt die vagrant Version an
+`vagrant status`  | Gibt den Stataus einer VM aus
+
 ### 5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt
 
 ### 6. Projekt mit Git und Mark Down dokumentiert
