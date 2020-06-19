@@ -327,6 +327,7 @@ Um nun den Gruppen auf deren Gruppenordner Berechtigung zu geben benutzte ich fo
 -	Mit den strengen Firewall Regeln können wir das eindringen über offene Ports grösstenteils vermeiden.
 -	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
 
+
 ## 5. Kriterium
 - [x] [1. Kreativität](#1-kreativität)
 - [x] [2. Komplexität](#2-komplexität)
