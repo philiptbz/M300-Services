@@ -254,16 +254,13 @@ Danach kann die VM mit dem Befehl vagrant up gestartet werden.
 Testfall            | Resultat
 ----------------- | -------------
 Die VM kann via Vagrant aufgesetzt werden sowie über Vagrant auf die VM zugegriffen werden.  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t1.png "vagrant up") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t2.png "vagrant ssh")
-`vagrant up`	  | Startet vagrant Umgebung
-`vagrant resume`  | Setzt eine suspendierte Maschine fort.
-`vagrant reload`  | Startet die VM neu, liest das Config File neu ein
-`vagrant ssh`     | Verbindet sich per SSH zur VM
-`vagrant halt`    | stoppt die VM
-`vagrant suspend` | suspendiert eine VM
-`vagrant destroy` | Zerstört / löscht die VM
-`vagrant provision` | Änderungen des Vagrantfiles werden übernommen
-`vagrant -v`      | Zeigt die vagrant Version an
-`vagrant status`  | Gibt den Stataus einer VM aus
+Von dem Client ist der Zugriff auf den Webserver möglich. | Apache Server ist Running und es kann auf den Server von Lokal zugegriffen werden. ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t3.png "mysql status") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t4.png "mysql website")
+Die Firewall ist richtig konfiguriert und funktioniert.  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t5.png "ufw status")
+Die Gruppenordner wurden erstellt  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t6.png "grp")
+Die Benutzer wurden erstellt   | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t7.png "benutzer")
+Mysql wurde installiert und funktioniert | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t8.png "mysql status") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t9.png "mysql login")
+LDAP wurde eingerichtet und das einloggen ist möglich. | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t9.png "ldap website")
+
 
 ### 5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt
 
