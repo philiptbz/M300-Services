@@ -250,6 +250,7 @@ Danach kann die VM mit dem Befehl vagrant up gestartet werden.
 
 
 ### 4. Funktionsweise getestet inkl. Dokumentation der Testfälle
+Mir war es wichtig alle primären Funktionen des Vagrantfiles zu Testen. Diese Tests sind unterhalb in der Tabelle mit Beweisen inform von Scrennshots
 
 Testfall            | Resultat
 ----------------- | -------------
