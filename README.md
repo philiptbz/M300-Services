@@ -259,7 +259,7 @@ Die Firewall ist richtig konfiguriert und funktioniert.  | ![](https://github.co
 Die Gruppenordner wurden erstellt  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t6.png "grp")
 Die Benutzer wurden erstellt   | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t7.png "benutzer")
 Mysql wurde installiert und funktioniert | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t8.png "mysql status") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t9.png "mysql login")
-LDAP wurde eingerichtet und das einloggen ist möglich. | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t9.png "ldap website")
+LDAP wurde eingerichtet und das einloggen ist möglich. | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t10.png "ldap website")
 
 
 ### 5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt
