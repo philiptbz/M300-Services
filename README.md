@@ -192,6 +192,9 @@ Eine Firewall hilft, das Netzwerk vor Eindringlingen zu schützen, aber wenn ein
 
 ### 1. Bestehende vm aus Vagrant-Cloud einrichten
 
+Eine bestehende VM kann aus dem Verzeichnis, indem die VM liegt bzw. indem das Vagrant-File liegt, gestartet werden. Hierzu muss in diesem Verzeichnis die Git-Bash geöffnet werden. Danach muss der Befehl ```vagrant up``` eingegeben werden.
+
+
 ### 2. Kennt die Vagrant-Befehle
 
 Befehl            | Funktion
