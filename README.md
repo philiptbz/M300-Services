@@ -222,6 +222,7 @@ Befehl            | Funktion
 
 ### 3. Eingerichtete Umgebung ist dokumentiert
 **Netzwerkplan**
+
 Logischer Netzwerkplan:
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild24.PNG "Netzwerkplan")
@@ -229,7 +230,7 @@ Logischer Netzwerkplan:
 Pysischer Netzwerkplan:
 Da wir hier mit einer Virtualisierung arbeiten, würde ein pysischer Netzwerkplan sehr mager aussehen. Die Firewall, der Proxy sowie der Web-Server sind keine pysische Geräte sondern befinden sich virtuell auf dem Laptop. 
 
-Umgebungsvariabeln:
+**Umgebungsvariabeln:**
 Zuerst müssen entweder im Explorer oder in der Git-Bash ins richtige Verzeichnis gewechselt werden.
 In meinem Falle befindet sich die VM, im Verzeichniss: C:\Daten\vm
 
