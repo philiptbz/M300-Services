@@ -322,3 +322,8 @@ Um nun den Gruppen auf deren Gruppenordner Berechtigung zu geben benutzte ich fo
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild21.png "cd")
 
 ### 4. Sicherheitsmassnahmen sind dokumentiert
+-   Lediglich der Port 80 des Web-Frontends und der Port 8080 der API wurden nach Aussen freigegeben.
+-	Durch den Reverse Proxy sind die Devices im LAN von aussen nicht einsehbar.
+-	Mit den strengen Firewall Regeln können wir das eindringen über offene Ports grösstenteils vermeiden.
+-	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
+
