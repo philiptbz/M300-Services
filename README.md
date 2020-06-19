@@ -253,7 +253,7 @@ Danach kann die VM mit dem Befehl vagrant up gestartet werden.
 
 Testfall            | Resultat
 ----------------- | -------------
-Die VM kann via Vagrant aufgesetzt werden sowie über Vagrant auf die VM zugegriffen werden.  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t1.png "vagrant up")
+Die VM kann via Vagrant aufgesetzt werden sowie über Vagrant auf die VM zugegriffen werden.  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t1.png "vagrant up") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t2.png "vagrant ssh")
 `vagrant up`	  | Startet vagrant Umgebung
 `vagrant resume`  | Setzt eine suspendierte Maschine fort.
 `vagrant reload`  | Startet die VM neu, liest das Config File neu ein
