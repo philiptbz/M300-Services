@@ -327,3 +327,28 @@ Um nun den Gruppen auf deren Gruppenordner Berechtigung zu geben benutzte ich fo
 -	Mit den strengen Firewall Regeln können wir das eindringen über offene Ports grösstenteils vermeiden.
 -	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
 
+## 5. Kriterium
+- [x] [1. Kreativität](#1-kreativität)
+- [x] [2. Komplexität](#2-komplexität)
+- [x] [3. Umfang](#3-umfang)
+- [x] [4. Authentifizierung und Autorisierung via LDAP](#4-authentifizierung-und-autorisierung-via-ldap)
+- [x] [5. Vergleich Vorwissen - Wissenszuwachs](#6-vergleich-vorwissen---wissenszuwachs)
+- [x] [6. Reflexion](#7-reflexion)
+
+### 1. Kreativität
+Ich denke die Kreativität ist genügend hoch. In dieser Arbeit habe ich probiert möglichst alles selbst zu machen und meine eigene Gedanken umzusetzen. Es wurden viele verschiedene Dinge umgesetzt, weshalb ich die Kreativtät als erfüllt empfinde. 
+
+### 2. Komplexität
+Da ich mehrere verschiedene Dienste zur Verfügung gestellt habe, finde ich auch, dass mein Vagrant-File die Komplexität erfüllt. A
+
+### 3. Umfang
+Wie bereits erwähnt setzte ich mehrere Dienste um, was sich auch in der länge der Vagrantfiles wiederspiegelt. Ich denke mit knapp 120 Zeilen ist die Umfang erfüllt.
+
+### 4. Authentifizierung und Autorisierung via LDAP
+Die 4. Authentifizierung und Autorisierung via LDAP wurde ab der Zeile 100 im Vagrant-File umgesetzt. 
+
+### 5. Vergleich Vorwissen - Wissenszuwachs
+Mein Wissenszuwachs ist eventuell nicht an der Dokumnentation ersichtlich. Wenn man jedoch überlegt, dass ich am Anfang des Moduls nicht eimal wusste wass Vagrant ist, denke ich wird der Wissenzuwachs schnell ersichtlich. Mir machte das Arbeiten mit Vagrant sehr viel Spass und der Wissenzuwachs war extrem. Mittlerweile bin ich in der Lage einige Dienste zu Automatisieren und kenne mich mit Vagrant ziehmlich gut aus.
+
+### 6. Reflexion
+Insgesamt hat mir die LB02 sehr gut gefallen. Am Anfang kannte ich die einzelnen Fachbegriffe zu diesem Thema nicht. Nun aber kann ich in vielen Gesprächen zu diesem Thema etwas dazu sagen. Ich bin sehr froh, dass ich diese Lernschritte gemacht habe und diese auch selber sehen kann. Ich werde sicherlich viel Stoff mitnehmen, welchen ich in dieser LB02 und in den jeweiligen Lektionen gelernt habe. Der Einstieg war etwas einfacher, da es sich hauptsächlich um die Einrichtung der Umgebung handelte. Da ich von einem vorherigen Module die einzelnen Tools bereits ein wenig kannte, fiel mir dies etwas leichert. Probleme mit Vagrant hatte ich bis jetzt eigentlich keine. Und wenn ich mal welche haben sollte, finde ich dazu sicherlich etwas im Internet oder kann mir womöglich sogar selber weiterhelfen. Auch in meiner Freizeit konnte ich zu Vagrant einige Dinge lernen. Ich habe einige Tutorials und Crash Courses auf YouTube angeschaut, welche mir auch weitergeholfen haben, um mein Vagrant-Script zu erweitern. Also in allem hat mir diese LB02 sehr viel Spass gemacht. :)1
