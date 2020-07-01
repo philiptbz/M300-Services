@@ -146,12 +146,10 @@ Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festge
 
 ## 3. Kriterium
 - [x] [1. Bestehende Docker-Container kombinieren](#1-bestehende-docker-container-kombinieren)
-- [x] [2. Bestehende Container als Backend, Desktop-App als Frontend einsetzen] 
-(#2-bestehende-container-als-backend-desktop-app-als-frontend-einsetzen)
-- [x] [3. Volumes zur persistenten Datenablage eingerichtet](#3-volumes-zur-persistenten-datenablage-eingerichtet)
-- [x] [4. Kennt die Docker spezifischen Befehle](#4-kennt-die-docker-spezifischen-befehle)
-- [x] [5. Eingerichtete Umgebung ist dokumentiert](#5-eingerichtete-umgebung-ist-dokumentiert)
-- [x] [6. Funktionsweise getestet inkl. Dokumentation der Testfälle](#5-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
+- [x] [2. Volumes zur persistenten Datenablage eingerichtet](#3-volumes-zur-persistenten-datenablage-eingerichtet)
+- [x] [3. Kennt die Docker spezifischen Befehle](#4-kennt-die-docker-spezifischen-befehle)
+- [x] [4. Eingerichtete Umgebung ist dokumentiert](#5-eingerichtete-umgebung-ist-dokumentiert)
+- [x] [5. Funktionsweise getestet inkl. Dokumentation der Testfälle](#5-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
 
 ### 1. Bestehende Docker-Container kombinieren
 
