@@ -264,27 +264,19 @@ Ein Neustart verhindert Zeitverluste und Ressorcenverluste von einem sterbenden 
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b5.PNG "restart")
 
+**Ressourcenbeschränken**
+Der Kernel definiert Ressourcenbeschränkungen, die für Prozesse gesetzt werden können. Diese lassen sich auch auf Docker-Container anwenden. Hierzu wäre der Command:
+
+`docker run --ulimit cpu=12:14 amouat/stress stress --cpu 1`
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b6.PNG "cd")
+
 
 ### 3. Benutzer- und Rechtevergabe ist eingerichtet
 Als erstes erstellte ich Gruppenordner
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild17.png "cd")
 
-Nun erstellte ich insgesamt zwei Benutzer:
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild18.png "cd")
-
-Da die rechtevergabe grundsätzlich viel sinnvoller und sicherer ist, wenn dies über eine Gruppe gemacht wird, erstellte ich Gruppen. 
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild19.png "cd")
-
-Nun fügte ich die Benutzer den Gruppen hinzu.
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild20.png "cd")
-
-Um nun den Gruppen auf deren Gruppenordner Berechtigung zu geben benutzte ich folgende Befehle:
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild21.png "cd")
 
 ### 4. Sicherheitsmassnahmen sind dokumentiert
 -   Lediglich der Port 80 des Web-Frontends und der Port 8080 der API wurden nach Aussen freigegeben.
