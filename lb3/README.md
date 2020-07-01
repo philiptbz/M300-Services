@@ -255,12 +255,14 @@ Wenn man den Speicher schützt, kann man die Chancen von DDos Attacken minimiere
 
 `docker run -m 128m --memory-swap 128m amouat/stress stress --vm 1 --vm-bytes 127m -t 5s`
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b4.PNG "cd")
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b4.PNG "speicher")
 
 **Neustarts begrenzen**
 Ein Neustart verhindert Zeitverluste und Ressorcenverluste von einem sterbenden Container. Auch hier kann eine DDos Attacke verhindert werden. Der Command dazu wäre:
 
 `docker run -d --restart=on-failure:10 my-flaky-image`
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b5.PNG "restart")
 
 
 ### 3. Benutzer- und Rechtevergabe ist eingerichtet
