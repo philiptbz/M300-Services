@@ -235,20 +235,18 @@ Mysql wurde installiert und funktioniert | ![](https://github.com/philiptbz/M300
 LDAP wurde eingerichtet und das einloggen ist möglich. | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t10.png "ldap website")
 
 ## 4. Kriterium
-- [x] [1. Firewall eingerichtet inkl. Rules](#1-firewall-eingerichtet-inkl-rules)
-- [x] [2. Reverse-Proxy eingerichtet](#2-reverse-proxy-eingerichtet)
-- [x] [3. Benutzer- und Rechtevergabe ist eingerichtet](#3-benutzer--und-rechtevergabe-ist-eingerichtet)
-- [x] [4. Sicherheitsmassnahmen sind dokumentiert](#4-sicherheitsmassnahmen-sind-dokumentiert)
+- [x] [1. Service-Überwachung ist eingerichtet &Aktive Benachrichtigung ist eingerichtet](#1-Service-überwachung-ist-eingerichtet-&-aktive-benachrichtigung-ist-eingerichtet)
+- [x] [2. Aspekte der Container-Absicherung](#3-aspekte-der-container-absicherung)
+- [x] [3. Sicherheitsmassnahmen sind dokumentiert](#4-sicherheitsmassnahmen-sind-dokumentiert)
 
-### 1. Firewall eingerichtet inkl. Rules
-Für die Sicherheit meines Systems ist die korrekte Konfiguration der Firewall sehr wichtig.
-Um die Firewall zu installieren verwendete ich folgenden Befehl:
+Nun geht es darum diese Container abzusichern. Es ist wichtig, dass Logging und Mitteilungen aktiviert sind. Das System muss dem Administrator behilflich sein. Im Ernstfall müssen Warnungen gesendet werden.
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild12.png "cd")
+### 1. Service-Überwachung ist eingerichtet & Aktive Benachrichtigung
+Eine gute Monitoring-Lösung sollte auf einen Blick den Zustand des Systems zeigen und rechtzeitig warnen, wenn Ressourcen knapp werden. Docker Tools cAdvisor von Google ist das am häufigsten eingesetzte Monitoring-Tool für Docker.
 
-Ich entschied mich für den Rules-Typ deny any. Hierbei werden alle Ports geschlossen und einzelne Ports werden geöffnet. Anschliessend öffnete ich die Ports 22, 80 sowie 443. Damit sind nur die essenziellsten Ports geöffnet und die Sicherheit bleibt gewährt. Mit dem Befehl sudo ufw enale, aktiviere ich die Firewall. Ufw ist die Bezeichnung der verwendeten Firewall. 
+Dieses Programm ist als Container verfügbar und man kann darauf zugreifen. Der folgende Command muss dazu aktiviert werden:
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild13.png "cd")
+`docker run -d --name cadvisor -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys:ro -v /var/lib/docker/:/var/lib/docker:ro -p 8080:8080 google/cadvisor:latest`
 
 ### 2. Reverse-Proxy eingerichtet
 Gleich wie bei der Firewall muss zuerst der Proxy-Dienst installiert werden. Dazu verwendete ich folgenden Befehl. 
