@@ -102,6 +102,38 @@ Die Vorteile der Containerisierung sind:
 - Effizient (Container nutzen Serverresourcen sehr dynamisch aus )
 - Performance (Container haben bringen mehr Leistung, als VMs, weil das Gastbetriebssystem auch seine eigenen Speicheranforderungen erfüllen und wertvollen Arbeitsspeicher des Hosts belegen muss)
 
+### Docker
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b2.svg "Docker")
+
+Docker ist eine Software zur Isolierung von Anwendungen mit Containervirtualisierung. Die Software benötigt keine Lizenzen.
+
+Docker nahm damals die bestehende Linux-Containertechnologie auf und verpackte und erweiterte sie in vielerlei Hinsicht – vor allem durch portable Images und eine benutzerfreundliche Schnittstelle.
+
+**Architektur**
+Im Folgenden sind alle Elemnte und ihre Aufgaben aufgelistet:
+
+**Docker Deamon**
+- Erstellen, Ausführen und Überwachen der Container
+- Bauen und Speichern von Images.
+
+**Docker Client**
+- Docker wird über die Kommandozeile (CLI) mittels des Docker Clients bedient
+- Kommuniziert per HTTP REST mit dem Docker Daemon
+
+**Images**
+- Images sind gebuildete Umgebungen welche als Container gestartet werden können
+- Images sind nicht veränderbar, sondern können nur neu gebuildet werden.
+- Images bestehen aus Namen und Version (TAG), z.B. ubuntu:16.04.
+
+**Container**
+- Container sind die ausgeführten Images
+- Ein Image kann beliebig oft als Container ausgeführt werden
+- Container bzw. deren Inhalte können verändert werden, dazu werden sogenannte Union File Systems verwendet, welche nur die Änderungen zum original Image speichern.
+
+**Docker Registry**
+- In Docker Registries werden Images abgelegt und verteilt
+
+
 ### 6. Wichtige Lernschritte sind dokumentiert
 Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festgehalten. Jedoch werde ich hier noch auf einige genauer eingehen. Anfangs hat es mir sehr geholfen, dass wir Zeit erhielten, um uns mit der Vagrant-Umgebung vertraut zu machen und die Grundbefehle auszuprobieren. Auch das Fehlerbeheben hat mich stark weiter gebracht und ich konnte dadurch sehr viel lernen. Eigentlich bestand das ganze Projekt nur aus Lernschritten und es fehlt mir schwer, hier das wichtigste Zusammenzufassen. 
 
