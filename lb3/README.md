@@ -145,46 +145,24 @@ Folgende Grafik zeigt der Aufbau von Microservices auf:
 Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festgehalten. Jedoch werde ich hier noch auf einige genauer eingehen. Anfangs hatte ich grosse Schwierigkeiten, da ich nicht genau wusste wass genau die Aufgabe ist. Ich brauchte einige Zeit bis ich mit der Dockerumgebung klar kam. Nach einigen Rückschlägen erzielte ich erste Fortschritte und kam immer besser zurecht. Auch das Fehlerbeheben hat mich stark weiter gebracht und ich konnte dadurch sehr viel lernen. Eigentlich bestand das ganze Projekt nur aus Lernschritten und es fehlt mir schwer, hier das wichtigste Zusammenzufassen. 
 
 ## 3. Kriterium
-- [x] [1. Bestehende vm aus Vagrant-Cloud einrichten](#1-bestehende-vm-aus-vagrant-cloud-einrichten)
-- [x] [2. Kennt die Vagrant-Befehle](#2-kennt-die-vagrant-befehle)
-- [x] [3. Eingerichtete Umgebung ist dokumentiert](#3-eingerichtete-umgebung-ist-dokumentiert)
-- [x] [4. Funktionsweise getestet inkl. Dokumentation der Testfälle](#4-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
-- [x] [5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt](#5-andere-vorgefertigte-vm-auf-eigenem-notebook-aufgesetzt)
+- [x] [1. Bestehende Docker-Container kombinieren](#1-bestehende-docker-container-kombinieren)
+- [x] [2. Bestehende Container als Backend, Desktop-App als Frontend einsetzen] 
+(#2-bestehende-container-als-backend-desktop-app-als-frontend-einsetzen)
+- [x] [3. Volumes zur persistenten Datenablage eingerichtet](#3-volumes-zur-persistenten-datenablage-eingerichtet)
+- [x] [4. Kennt die Docker spezifischen Befehle](#4-kennt-die-docker-spezifischen-befehle)
+- [x] [5. Eingerichtete Umgebung ist dokumentiert](#5-eingerichtete-umgebung-ist-dokumentiert)
+- [x] [6. Funktionsweise getestet inkl. Dokumentation der Testfälle](#5-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
 
-### 1. Bestehende vm aus Vagrant-Cloud einrichten
+### 1. Bestehende Docker-Container kombinieren
 
 Eine bestehende VM kann aus dem Verzeichnis, indem die VM liegt bzw. indem das Vagrant-File liegt, gestartet werden. Hierzu muss in diesem Verzeichnis die Git-Bash geöffnet werden. Danach muss der Befehl ```vagrant up``` eingegeben werden.
 
 
-### 2. Kennt die Vagrant-Befehle
-
-Befehl            | Funktion
------------------ | -------------
-`vagrant init`    | Erstellt eine VM
-`vagrant up`	  | Startet vagrant Umgebung
-`vagrant resume`  | Setzt eine suspendierte Maschine fort.
-`vagrant reload`  | Startet die VM neu, liest das Config File neu ein
-`vagrant ssh`     | Verbindet sich per SSH zur VM
-`vagrant halt`    | stoppt die VM
-`vagrant suspend` | suspendiert eine VM
-`vagrant destroy` | Zerstört / löscht die VM
-`vagrant provision` | Änderungen des Vagrantfiles werden übernommen
-`vagrant -v`      | Zeigt die vagrant Version an
-`vagrant status`  | Gibt den Stataus einer VM aus.
-
-Weitere nützliche Commands im Zusammenhang mit der Arbeit
-
-Befehl            | Funktion
------------------ | -------------
-`eval 'ssh-agent'`    | Hintergrundprogramm, das Passwörter für private SSH-Schlüssel behandelt, aufrufen
-`ssh-add`	  | Fordert den Benutzer zur Eingabe eines Passworts für den privaten Schlüssel auf und fügt es der Liste hinzu, die vom SSH-Agenten verwaltet wird.
-`code`  | Visual Studio Code öffnen.
-`git add`  | Änderungen im Verzeichnis wurden gespeichert.
-`git commit`     | Änderunge wurden akzeptiert.
-`git push`    | Änderunge wurden an Git gesendet und veröffentlicht.
+### 2. Bestehende Container als Backend, Desktop-App als Frontend einsetzen
 
 
-### 3. Eingerichtete Umgebung ist dokumentiert
+
+### 3. Volumes zur persistenten Datenablage eingerichtet
 **Netzwerkplan**
 
 Logischer Netzwerkplan:
@@ -210,7 +188,42 @@ Danach kann die VM mit dem Befehl vagrant up gestartet werden.
 -	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
 
 
-### 4. Funktionsweise getestet inkl. Dokumentation der Testfälle
+### 4. Kennt die Docker spezifischen Befehle
+
+Befehl            | Funktion
+----------------- | -------------
+`docker ps`    | Alle laufende Container anzeigen
+`docker container ls -a`	  | Alle Container anzeigen
+`docker images`  | Alle Images anzeigen
+`pull (Imagename)`  | Image herunterladen
+`docker image build -t` | Image erstellen
+`docker stop [ID]`    | Container stoppen
+`docker exec -it "containername" bash` | den Container "betreten"
+`docker rm -f id` | Zerstört / löscht das Image
+`docker build -f "name" . -t apache_mysql` | Erstellt einen Container und bennent ihn
+`docker run --name apache_mysql`  | startet den Container
+
+Weitere nützliche Commands im Zusammenhang mit der Arbeit
+
+Befehl            | Funktion
+----------------- | -------------
+`mysql -u root -p`  | Einloggen in die Mysql Datenbank
+`/etc/init.d/apache2 status`	 | zeigt den Status des Apache Dienst an
+`/etc/init.d/mysql status`  | zeigt den Status des Mysql Dienstes an
+
+
+
+
+### 5. Eingerichtete Umgebung ist dokumentiert
+
+Ich habe noch eine weitere VM auf dem Notebook aufgesetzt. Hierbei habe ich das Vagrant-File, welches unter dem folgenden Pfad liegt ausgeführt.
+
+https://github.com/mc-b/M300/tree/master/vagrant/db
+
+Diese VM habe ich mit dem Befehl `vagrant up` gestartet. Auch hier musste ich im Verzeichnis sein, in dem das Vagrant-File vorhanden war. 
+
+### 6. Funktionsweise getestet inkl. Dokumentation der Testfälle
+
 Mir war es wichtig alle primären Funktionen des Vagrantfiles zu Testen. Diese Tests sind unterhalb in der Tabelle mit Beweisen inform von Scrennshots
 
 Testfall            | Resultat
@@ -222,16 +235,6 @@ Die Gruppenordner wurden erstellt  | ![](https://github.com/philiptbz/M300-Servi
 Die Benutzer wurden erstellt   | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t7.png "benutzer")
 Mysql wurde installiert und funktioniert | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t8.png "mysql status") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t9.png "mysql login")
 LDAP wurde eingerichtet und das einloggen ist möglich. | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t10.png "ldap website")
-
-
-### 5. Andere, vorgefertigte vm auf eigenem Notebook aufgesetzt
-
-Ich habe noch eine weitere VM auf dem Notebook aufgesetzt. Hierbei habe ich das Vagrant-File, welches unter dem folgenden Pfad liegt ausgeführt.
-
-https://github.com/mc-b/M300/tree/master/vagrant/db
-
-Diese VM habe ich mit dem Befehl `vagrant up` gestartet. Auch hier musste ich im Verzeichnis sein, in dem das Vagrant-File vorhanden war. 
-
 
 ## 4. Kriterium
 - [x] [1. Firewall eingerichtet inkl. Rules](#1-firewall-eingerichtet-inkl-rules)
