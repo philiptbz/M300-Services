@@ -1,7 +1,7 @@
 # M300-Services
 M300-Services von Philip Kampfer
 
-In der folgenden Dokumentation werde ich den Leistungsnachweis zu meiner Arbeit erbringen. 
+In der folgenden Dokumentation werde ich den Leistungsnachweis zu der LB3 erbringen. 
 
 # Inhaltsverzeichnis
 - [1. Kriterium](#1-kriterium)
@@ -88,96 +88,19 @@ Ich habe in diesem Fall Visual Studio Code als Mark Down Editor benutzt. Ich hab
 
 ### 5. Persönlicher Wissenstand
 
-### Linux
-Aufgrund der vorgängigen Module und ÜK’s kenne ich mich mit Linux gut aus. Ich habe bereits diverse Dienste und Applikationen auf der Linux Umgebung aufgesetzt und installiert. Auch mit den meisten Command bin ich vertraut und weiss auch wie und wo nachschauen, falls ich einen Command nicht kenne. 
+### Containierisierung
+Bei der Containerisierung handelt es sich um eine Art Virtualisierung auf Anwendungsebene, bei der mehrere isolierte Maschinen auf einem einzelnen Kernel ausgeführt werden können. Diese Maschinen werden Container genannt.
 
-### Virtualisierung
-Mit der Virtualisierung hatte ich mich aufgrund des letzten ÜKs stark mit auseinandergesetzt. Jedoch habe ich bis jetzt erst Erfahrung mit dem Client sowie Server Virtualisierung machen können. Ich habe eine Zusammenfassung über mehrere Themen der Virtualisierung gemacht diese kann hier eingesehen werden.
+Container bieten eine Standardmethode um Anwendungscode, Laufzeitumgebung, Systemwerkzeugen, Systembibliotheken und Konfigurationen in einer Maschine zusammenzufassen. Im Gegensatz zu VMS, die alle ihren eigenen "Kernel" haben, teilen sich Container einen Kernel (Betriebssystem), der auf der Hardware installiert ist.
 
-### Vagrant
-Von Vagrant habe ich, dass erste Mal in Form dieses Modules gehört. Ich bin zuvor noch nie mit einer solchen Virtualisierung / Automatisierung in Kontakt gekommen. Im Verlauf der LB2 bin ich jedoch immer besser mit der Anwendung zurechtgekommen. Ebenfalls informierte ich mich aus Neugier noch wie das Konzept hinter Vagrant funktioniert und konnte so einige wichtige Lernschritte sammeln. Ich bin überzeugt von Vagrant und sehe darin einen grossen Vorteil sowie ein riesiges Entwicklungspotenzial. 
+Folgendes Bild zeigt den Unterschied zwischen Container und Virtuellen Maschinen:
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b1.jpg "Container vs VM")
 
-### Verionsverwaltung/Git
-Git wurde von Linus Torvalds entwickelt und ist ein Versionorientiertes Programm. Es ermöglicht mehreren Benutzern gleichzeitig, eine Datei zu bearbeiten, ohne dass man sich Probleme macht, indem man Elemente der Datei überschreibt.
+Die Vorteile der Containerisierung sind:
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild11.jpg "Git")
-
-Dadurch ergeben sich am Repo für Bearbeiter folgende Möglichkeiten:
-•	Die eigene Arbeit kann einfach wieder in die zentrale Basis integriert werden.
-•	Es kann zeitgleich weiterentwickelt werden, z.B. jeder an verschiedenen Features.
-•	Die Versionierung verhindert, dass bereits getätigte Arbeiten verloren gehen bzw. überschrieben werden.
-•	Bei Bedarf kann zu früheren Versionen zurückgekehrt werden oder simultan an verschiedenen Versionen gearbeitet werden (auch "Branches" genannt).
-Git bietet aber noch viel mehr, welche Eigenschaften es anderen Systemen überlegen macht kann
-
-### Mark Down
-Markdown ist eine vereinfachte aufzeichnungssprache. Das Ziel ist es ein Format zu erstellen, dass man es ohne konvertierung lesen kann. 2004 wurde es entworfen. Diese Dokumentation wurde mit Markdown geschrieben. Man kann Markdown auf jedem Texteditor nutzen. Ich habe in diesem Projekt, dass erste mal mit Morkdown gearbeitet und finde es eine tolle Alternative zu den herkömmlichen Textformaten. 
-
-### Systemsicherheit
-**Was ist ein System?**
-Jedes System hat eine Systemgrenze. Als erstes definieren, was ist meine Systemgrenze (Ganz genau definieren). Über die Systemgrenze hat es Schnittstellen gegen aussen ins Netz. Im System gibt es Elemente. Unter diesen Elementen bestehen Beziehungen. Man definiert eine Systemgrenze anhand eines Visios und einer Beschreibung. Doku der Schnittstelle:  10 Gbit/s, interface, Ethernet, 5 VLAN.
-
-**Systemsicherheit besteht aus:**
--	Server, Clients -> sicher betreiben
--	Firewalls regeln den Sicheren Verkehr = Netz Sicherheit
--	Kommunikation End to End sichern = Kommunikationssicherheit
--	Verschlüsselung, Authentifizierung, Applikationssicherheit
-
-Auch in meiner Umgebung spielt die Systemsicherheit eine wichtige Rolle. Ich werde zwei Begriffe die ebenfalls in meiner Arbeit vorkommen werden erklären. 
-
-### Proxy:
-Ein Proxy-Server ist ein Computer oder ein Softwaresystem, das als Vermittler zwischen einer Endpunktvorrichtung fungiert. Diese Verbindung kann beispielsweise zwischen einem Computer und einem Webserver sein, von dem ein Benutzer einen Dienst anfordert. Der Proxy-Server kann sich auf derselben Maschine wie ein Firewall-Server befinden oder auf einem separaten Server, der Anfragen über die Firewall weiterleitet.
-
-**Wofür wird Proxy eingesetzt?**
-Proxy-Server werden sowohl für legale als auch für illegale Zwecke eingesetzt. Im Unternehmen wird ein Proxy-Server verwendet, um unter anderem Sicherheit, administrative Kontrolle oder Caching-Dienste zu ermöglichen. Proxys werden aber auch für Personal Computing eingesetzt, um die Privatsphäre der Benutzer und anonymes Surfen zu ermöglichen. Proxy-Server können auch für den umgekehrten Zweck eingesetzt werden: Zur Überwachung des Datenverkehrs und zur Untergrabung der Privatsphäre der Benutzer.
-
-**Wie funktioniert ein Proxy-Server?**
-Wenn ein Proxy-Server eine Anforderung für eine Internetressource (z. B. eine Webseite) erhält, sucht er in seinem lokalen Cache nach früheren Seiten. Wenn er die Seite findet, gibt er sie an den Benutzer zurück, ohne die Anfrage an das Internet weiterleiten zu müssen. Wenn sich die Seite nicht im Cache befindet, verwendet der Proxy-Server, der als Client im Namen des Benutzers fungiert, eine seiner eigenen IP-Adressen, um die Seite vom Server im Internet abzurufen. Wenn die Seite zurückgegeben wird, bezieht der Proxy-Server sie auf die ursprüngliche Anforderung und leitet sie an den Client weiter.
-
-**Forward and reverse proxy servers:**
-Forward-Proxys senden die Anfragen eines Clients weiter an einen Webserver. Benutzer greifen auf Proxys zu, indem sie direkt auf eine Web-Proxy-Adresse surfen oder ihre Interneteinstellungen konfigurieren. Weiterleitende Vollmachten ermöglichen die Umgehung von Firewalls und erhöhen die Privatsphäre und Sicherheit für einen Benutzer.
-Ein Reverse-Proxy-Server ist eine Art Proxy-Server, der typischerweise hinter der Firewall in einem privaten Netzwerk sitzt und Client-Anfragen an den entsprechenden Backend-Server weiterleitet. Ein Reverse-Proxy bietet eine zusätzliche Abstraktions- und Steuerungsebene, um den reibungslosen Ablauf des Netzwerkverkehrs zwischen Clients und Servern zu gewährleisten.
-
-**Reverse-Proxies werden verwendet:**
-Um den indirekten Zugriff zu ermöglichen, wenn eine Website direkte Verbindungen als Sicherheitsmaßnahme verbietet.
-Um einen Lastenausgleich zwischen den Servern zu ermöglichen.
-Um interne Inhalte an Internetnutzer zu streamen.
-Um den Zugriff auf eine Website zu deaktivieren, z.B. wenn ein ISP oder eine Regierung eine Website blockieren möchte.
-Websites können aus mehr oder weniger legitimen Gründen blockiert werden. Reverse Proxies können verwendet werden, um den Zugang zu illegalen oder urheberrechtlich geschützten Inhalten zu verhindern. Manchmal sind diese Gründe gerechtfertigt, aber manchmal ist die Rechtfertigung zweifelhaft. Sie können auch verhindern, dass Benutzer auf Websites zugreifen, auf denen sie Informationen über Regierungs- oder Branchenmaßnahmen preisgeben können. Die Sperrung des Zugangs zu solchen Websites kann das Recht auf freie Meinungsäußerung verletzen.
-
-### Firewall
-Eine Firewall ist ein Netzwerksicherheitssystem, das den ein- und ausgehenden Netzwerkverkehr basierend auf vorgegebenen Sicherheitsregeln überwacht und kontrolliert. Eine Firewall errichtet typischerweise eine Barriere zwischen einem vertrauenswürdigen internen Netzwerk und einem nicht vertrauenswürdigen externen Netzwerk, wie beispielsweise dem Internet.
-Firewalls werden oft entweder als Netzwerk-Firewalls oder als hostbasierte Firewalls kategorisiert. Netzwerk-Firewalls filtern den Datenverkehr zwischen zwei oder mehr Netzwerken und laufen auf Netzwerkhardware. Host-basierte Firewalls laufen auf Host-Computern und steuern den Netzwerkverkehr innerhalb und außerhalb dieser Computer.
-Firewalls können entweder Software oder Hardware sein, obwohl es am besten ist, beides zu haben. Eine Software-Firewall ist ein auf jedem Computer installiertes Programm, das den Datenverkehr über Portnummern und Anwendungen regelt, während eine physische Firewall ein Gerät ist, das zwischen Ihrem Netzwerk und dem Gateway installiert wird.
- 
-**Die verschiedenen Arten von Firewalls**
-Als Grundfunktion nutzt die Firewall sogenannte Paketfilter. Dieser Paketfilter arbeitet nach statischen Regeln und überprüft jedes Datenpaket einzeln, kann aber keine Verbindungen zu vorherigen Paketen herstellen.
-Eine erweiterte Form der Paketfilterung ist die sogenannte Stateful Inspection. Bei dieser Paketfilterung werden einzelne Beziehungen zu den überwachten Datenpaketen erkannt und überprüft.
-
-**Paketfilternde Firewalls**
-Paketfilternde Firewalls, ist die gebräuchlichste Art von Firewall, diese untersuchen Pakete und verhindern deren Durchgang, wenn sie nicht mit einem festgelegten Sicherheitsregelwerk übereinstimmen. Diese Art von Firewall überprüft die Quell- und Ziel-IP-Adressen des Pakets. Wenn Pakete mit denen einer "erlaubten" Regel auf der Firewall übereinstimmen, dann wird ihr vertraut, dass sie in das Netzwerk eintritt.
-Paketfilternde Firewalls werden in zwei Kategorien unterteilt: stateful und stateless. Stateless Firewalls untersuchen Pakete unabhängig voneinander und ohne Kontext, was sie zu einem einfachen Ziel für Hacker macht. Im Gegensatz dazu speichern statful Firewalls Informationen über zuvor übergebene Pakete und gelten als viel sicherer.
-Bei der Paketfilterung werden die Datenpakete anhand einer Netzwerkadresse identifiziert und wird ihren Zielen entweder zugeführt oder geblockt. Um diese Richtlinien umzusetzen werden bei den einzelnen Datenpaketen die Header-Informationen ausgewertet und nach diesen Informationen regelbasiert behandelt. Die Paketfilterung arbeitet somit in den Schichten Transport-Layer (Schicht 4, Port), Network-Layer (Schicht 3, IP-Adresse) sowie bei manchen Stateful-Firewalls noch die Schicht Application-Layer (Schicht 7, hier die Nutzerdaten) des OSI-Modells.
-Während paketfilternde Firewalls effektiv sein können, bieten sie letztendlich einen sehr einfachen Schutz und können sehr begrenzt sein - zum Beispiel können sie nicht feststellen, ob der Inhalt der gesendeten Anfrage die zu erreichende Anwendung negativ beeinflusst. Wenn eine böswillige Anfrage, die von einer vertrauenswürdigen Quelladresse aus erlaubt wurde, beispielsweise zum Löschen einer Datenbank führen würde, hätte die Firewall keine Möglichkeit, dies zu erfahren. Firewalls der nächsten Generation und Proxy-Firewalls sind besser gerüstet, um solche Bedrohungen zu erkennen.
- 
-**Next-Generation Firewalls (NGFW)**
-Sie kombinieren traditionelle Firewall-Technologie mit zusätzlichen Funktionen wie verschlüsselte Traffic-Inspektion, Intrusion Prevention-Systeme, Virenschutz und mehr. Insbesondere beinhaltet es die Deep Packet Inspection (DPI). Während grundlegende Firewalls nur Paketheader betrachten, untersucht die Deep Packet Inspection die Daten innerhalb des Pakets selbst und ermöglicht es Benutzern, Pakete mit bösartigen Daten effektiver zu identifizieren, zu kategorisieren oder zu stoppen.
- 
-**Proxy-Firewalls**
-Hierbei handelt es sich um Computer, die zwischen das lokale Netzwerk und das Internet geschaltet werden. Ein Proxy nimmt die Anforderung eines Computers aus dem lokalen Netzwerk entgegen und führt diese Anforderung stellvertretend im Internet aus. Die zurückerhaltenen Daten schickt der Proxy dann an den Computer im lokalen Netzwerk weiter. Proxy-Firewalls filtern den Netzwerkverkehr auf Anwendungsebene. Im Gegensatz zu einfachen Firewalls fungiert der Proxy als Vermittler zwischen zwei Endsystemen. Der Client muss eine Anfrage an die Firewall senden, wo sie dann anhand einer Reihe von Sicherheitsregeln bewertet und dann erlaubt oder gesperrt wird. Insbesondere überwachen Proxy-Firewalls den Datenverkehr für Layer-7-Protokolle wie HTTP und FTP und verwenden sowohl die Stateful- als auch die Deep Packet Inspection, um bösartigen Datenverkehr zu erkennen.
- 
-**NAT-Firewalls**
-Diese Firewalls ermöglichen es mehreren Geräten mit unabhängigen Netzwerkadressen, sich über eine einzige IP-Adresse mit dem Internet zu verbinden, wobei einzelne IP-Adressen verborgen bleiben. Infolgedessen können Angreifer, die ein Netzwerk nach IP-Adressen durchsuchen, keine spezifischen Details erfassen und bieten so mehr Sicherheit vor Angriffen.
-Stateful Multilayer Inspection (SMLI)
-SMLI Firewalls filtern Pakete auf Netzwerk-, Transport- und Anwendungsebene und vergleichen sie mit bekannten vertrauenswürdigen Paketen. Wie NGFW-Firewalls untersucht auch SMLI das gesamte Paket und lässt es nur passieren, wenn sie jede Schicht einzeln passieren. Diese Firewalls untersuchen Pakete, um den Zustand der Kommunikation (also den Namen) zu bestimmen, um sicherzustellen, dass die gesamte initiierte Kommunikation nur mit vertrauenswürdigen Quellen stattfindet.
- 
-**Vorteile an der Verwendung einer Firewall**
-Ein Firmennetzwerk oder ein Heimcomputer hat eine Reihe von Vorteilen bei der Verwendung einer Firewall.
-Sie sind kostengünstiger als die Sicherung jedes einzelnen Computers im Firmennetzwerk, da es oft nur ein oder wenige Firewall-Systeme gibt, auf die man sich konzentrieren kann.
-Es gibt einige Firewalls, die in der Lage sind, Viren, Trojaner, Würmer und Spyware usw. zu erkennen.
- 
-**Nachteile der Verwendung einer Firewall**
-Eine Firewall hilft, das Netzwerk vor Eindringlingen zu schützen, aber wenn eine Firewall nicht richtig verwendet wird, würde sie Ihnen einen falschen Eindruck vermitteln, dass das Netzwerk sicher ist. Der größte Nachteil einer Firewall ist, dass sie das Netzwerk nicht vor Angriffen von innen schützen kann.
-
+- Resourcenbedarf (weniger Resourcen als VMs)
+- Effizient (Container nutzen Serverresourcen sehr dynamisch aus )
+- Performance (Container haben bringen mehr Leistung, als VMs, weil das Gastbetriebssystem auch seine eigenen Speicheranforderungen erfüllen und wertvollen Arbeitsspeicher des Hosts belegen muss)
 
 ### 6. Wichtige Lernschritte sind dokumentiert
 Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festgehalten. Jedoch werde ich hier noch auf einige genauer eingehen. Anfangs hat es mir sehr geholfen, dass wir Zeit erhielten, um uns mit der Vagrant-Umgebung vertraut zu machen und die Grundbefehle auszuprobieren. Auch das Fehlerbeheben hat mich stark weiter gebracht und ich konnte dadurch sehr viel lernen. Eigentlich bestand das ganze Projekt nur aus Lernschritten und es fehlt mir schwer, hier das wichtigste Zusammenzufassen. 
