@@ -133,6 +133,15 @@ Im Folgenden sind alle Elemnte und ihre Aufgaben aufgelistet:
 **Docker Registry**
 - In Docker Registries werden Images abgelegt und verteilt
 
+### Microservices
+Microservices sind ein Architekturkonzept der Anwendungsentwicklung. Ein Microservice ist also eine Kernfunktion einer Anwendung und er wird unabhängig von anderen Services ausgeführt.
+
+Jede Funktion kann unabhängig entwickelt und implementiert werden.
+
+Folgende Grafik zeigt der Aufbau von Microservices auf: 
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b3.png "Microservices")
+
+
 
 ### 6. Wichtige Lernschritte sind dokumentiert
 Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festgehalten. Jedoch werde ich hier noch auf einige genauer eingehen. Anfangs hat es mir sehr geholfen, dass wir Zeit erhielten, um uns mit der Vagrant-Umgebung vertraut zu machen und die Grundbefehle auszuprobieren. Auch das Fehlerbeheben hat mich stark weiter gebracht und ich konnte dadurch sehr viel lernen. Eigentlich bestand das ganze Projekt nur aus Lernschritten und es fehlt mir schwer, hier das wichtigste Zusammenzufassen. 
