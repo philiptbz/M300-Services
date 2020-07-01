@@ -211,7 +211,6 @@ Befehl            | Funktion
 
 
 
-
 ### 5. Eingerichtete Umgebung ist dokumentiert
 
 Ich habe noch eine weitere VM auf dem Notebook aufgesetzt. Hierbei habe ich das Vagrant-File, welches unter dem folgenden Pfad liegt ausgeführt.
@@ -248,18 +247,21 @@ Dieses Programm ist als Container verfügbar und man kann darauf zugreifen. Der 
 
 `docker run -d --name cadvisor -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys:ro -v /var/lib/docker/:/var/lib/docker:ro -p 8080:8080 google/cadvisor:latest`
 
-### 2. Reverse-Proxy eingerichtet
-Gleich wie bei der Firewall muss zuerst der Proxy-Dienst installiert werden. Dazu verwendete ich folgenden Befehl. 
+### 2.Aspekte der Container-Absicherung
+ch habe folgende weitere Sicherheitsaspekte für meine Container realisiert:
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild14.png "cd")
+**Speicher**
+Wenn man den Speicher schützt, kann man die Chancen von DDos Attacken minimieren. Dies ist wichtig, da der Speicher nicht "aufgefressen" werden darf. Hier wäre der Command dazu:
 
-Um den Proxy anschliessend benutzen zu können musste ich einige Module aktivieren:
+`docker run -m 128m --memory-swap 128m amouat/stress stress --vm 1 --vm-bytes 127m -t 5s`
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild15.png "cd")
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b4.png "cd")
 
-Danach konfigurierte ich die nötigen Einstellungen für den Reverse Proxy:
+**Neustarts begrenzen**
+Ein Neustart verhindert Zeitverluste und Ressorcenverluste von einem sterbenden Container. Auch hier kann eine DDos Attacke verhindert werden. Der Command dazu wäre:
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild16.png "cd")
+`docker run -d --restart=on-failure:10 my-flaky-image`
+
 
 ### 3. Benutzer- und Rechtevergabe ist eingerichtet
 Als erstes erstellte ich Gruppenordner
