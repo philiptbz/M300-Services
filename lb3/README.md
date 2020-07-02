@@ -260,7 +260,7 @@ Logischer Netzwerkplan:
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b19.PNG "Netzwerkplan")
 
 Pysischer Netzwerkplan:
-Da wir hier mit einer Virtualisierung arbeiten, würde ein pysischer Netzwerkplan sehr mager aussehen. Die Firewall, der Proxy sowie der Web-Server sind keine pysische Geräte sondern befinden sich virtuell auf dem Laptop. 
+Da wir hier mit einer Virtualisierung arbeiten, würde ein pysischer Netzwerkplan sehr mager aussehen. Die Virtualisierungssoftware, der Dockerengine sowie der Web-Server und Mysql sind keine pysische Geräte sondern befinden sich virtuell auf dem Laptop. 
 
 **Umgebungsvariabeln:**
 Zuerst müssen entweder im Explorer oder im Terminal ins richtige Verzeichnis gewechselt werden.
@@ -272,10 +272,11 @@ Danach kann die VM mit dem Befehl vagrant up gestartet werden.
 
 **Sicherheitsaspekte**
 
--	Lediglich der Port 80 des Web-Frontends und der Port 8080 der API wurden nach Aussen freigegeben.
--	Durch den Reverse Proxy sind die Devices im LAN von aussen nicht einsehbar.
--	Mit den strengen Firewall Regeln können wir das eindringen über offene Ports grösstenteils vermeiden.
+-	Lediglich der Port 80 des Web-Frontends und der Port 8100 der API wurden nach Aussen freigegeben.
 -	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
+-   Der Zustand des Containers wird stets gemonitort und der Admin alamiert.
+-   Schutz gegen DoS sowie DDos-Attaken durch Speicher begrenzung
+-   
 
 
 ### 5. Eingerichtete Umgebung ist dokumentiert
