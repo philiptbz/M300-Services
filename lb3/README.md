@@ -145,16 +145,24 @@ Folgende Grafik zeigt der Aufbau von Microservices auf:
 Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festgehalten. Jedoch werde ich hier noch auf einige genauer eingehen. Anfangs hatte ich grosse Schwierigkeiten, da ich nicht genau wusste wass genau die Aufgabe ist. Ich brauchte einige Zeit bis ich mit der Dockerumgebung klar kam. Nach einigen Rückschlägen erzielte ich erste Fortschritte und kam immer besser zurecht. Auch das Fehlerbeheben hat mich stark weiter gebracht und ich konnte dadurch sehr viel lernen. Eigentlich bestand das ganze Projekt nur aus Lernschritten und es fehlt mir schwer, hier das wichtigste Zusammenzufassen. 
 
 ## 3. Kriterium
-- [x] [1. Bestehende Docker-Container kombinieren](#1-bestehende-docker-container-kombinieren)
+- [x] [1. Mein Dockercontainer](#1-mein-dockercontainer)
 - [x] [2. Volumes zur persistenten Datenablage eingerichtet](#2-volumes-zur-persistenten-datenablage-eingerichtet)
 - [x] [3. Kennt die Docker spezifischen Befehle](#3-kennt-die-docker-spezifischen-befehle)
 - [x] [4. Eingerichtete Umgebung ist dokumentiert](#4-eingerichtete-umgebung-ist-dokumentiert)
 - [x] [5. Funktionsweise getestet inkl. Dokumentation der Testfälle](#5-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
 
-### 1. Bestehende Docker-Container kombinieren
+### 1. Mein Dockercontainer
 
-Eine bestehende VM kann aus dem Verzeichnis, indem die VM liegt bzw. indem das Vagrant-File liegt, gestartet werden. Hierzu muss in diesem Verzeichnis die Git-Bash geöffnet werden. Danach muss der Befehl ```vagrant up``` eingegeben werden.
+Ich erstellte einen Dockercontainer der mehrere Services ausführt. Der erste Dienst den ich implementierte war ein Apache Dienst.
+Zuerst wird der Webserver installiert:
+`RUN apt-get -q -y install apache2`
 
+Danach machte ich einige Grundkonfigurationen 
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b9.PNG "apache2")
+
+Zu guterletzt startete ich den Service:
+`RUN /etc/init.d/apache2 start`
+`CMD /bin/bash -c "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGROUND"`
 
 ### 2. Volumes zur persistenten Datenablage eingerichtet
 
