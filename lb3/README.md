@@ -146,9 +146,9 @@ Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festge
 
 ## 3. Kriterium
 - [x] [1. Bestehende Docker-Container kombinieren](#1-bestehende-docker-container-kombinieren)
-- [x] [2. Volumes zur persistenten Datenablage eingerichtet](#3-volumes-zur-persistenten-datenablage-eingerichtet)
-- [x] [3. Kennt die Docker spezifischen Befehle](#4-kennt-die-docker-spezifischen-befehle)
-- [x] [4. Eingerichtete Umgebung ist dokumentiert](#5-eingerichtete-umgebung-ist-dokumentiert)
+- [x] [2. Volumes zur persistenten Datenablage eingerichtet](#2-volumes-zur-persistenten-datenablage-eingerichtet)
+- [x] [3. Kennt die Docker spezifischen Befehle](#3-kennt-die-docker-spezifischen-befehle)
+- [x] [4. Eingerichtete Umgebung ist dokumentiert](#4-eingerichtete-umgebung-ist-dokumentiert)
 - [x] [5. Funktionsweise getestet inkl. Dokumentation der Testfälle](#5-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
 
 ### 1. Bestehende Docker-Container kombinieren
@@ -156,9 +156,21 @@ Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festge
 Eine bestehende VM kann aus dem Verzeichnis, indem die VM liegt bzw. indem das Vagrant-File liegt, gestartet werden. Hierzu muss in diesem Verzeichnis die Git-Bash geöffnet werden. Danach muss der Befehl ```vagrant up``` eingegeben werden.
 
 
-### 2. Bestehende Container als Backend, Desktop-App als Frontend einsetzen
+### 2. Volumes zur persistenten Datenablage eingerichtet
 
+Docker-Container besitzen keinen persistenten Speicher, dass heisst löscht der Admin einen Container, sind alle darin enthaltenen Daten verloren. Zum Glück bietet Docker für das Problem eine Lösung an: Per Volume-Dienst lässt sich ein Container mit persistentem Speicher versorgen. 
+Container auf Volume erstellen:
 
+`docker create -v /dbvolume --name datenbank training/postgres /bin/true`
+
+Mit dem Parameter “-volume” aus „Docker run” wird es möglich, das Volumen „/dbvolume des Containers datenbank auf andere Container zu mounten.
+
+Mit den beiden folgenden Befehlen werden die beiden Container „db1“ und „db2“ erzeugt:
+`sudo docker run -d --volumes-from dbstore --name db1 training/postgre` 
+`sudo docker run -d --volumes-from dbstore --name db2 training/postgres`
+
+Volume löschen:
+`docker rm –v`
 
 ### 3. Volumes zur persistenten Datenablage eingerichtet
 **Netzwerkplan**
@@ -268,7 +280,6 @@ Ein Neustart verhindert Zeitverluste und Ressorcenverluste von einem sterbenden 
 Der Kernel definiert Ressourcenbeschränkungen, die für Prozesse gesetzt werden können. Diese lassen sich auch auf Docker-Container anwenden. Hierzu wäre der Command:
 
 `docker run --ulimit cpu=12:14 amouat/stress stress --cpu 1`
-
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b6.PNG "cd")
 
 
