@@ -184,6 +184,29 @@ Auch bei Mysql musste ich einige Konfigurationen vornehmen, wie z.B den Port fü
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b12.PNG "mysql2")
 
+**Benutzer & Gruppen**
+
+Ebenfalls erstellte ich Benutzer und machte eine Rechtevergabe:
+Als erstes erstellte ich Gruppenordner
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b13.PNG "cd")
+
+Nun erstellte ich insgesamt zwei Benutzer:
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b14.PNG "cd")
+
+Da die rechtevergabe grundsätzlich viel sinnvoller und sicherer ist, wenn dies über eine Gruppe gemacht wird, erstellte ich Gruppen. 
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b15.PNG "cd")
+
+Nun fügte ich die Benutzer den Gruppen hinzu.
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b16.PNG "cd")
+
+Um nun den Gruppen auf deren Gruppenordner Berechtigung zu geben benutzte ich folgende Befehle:
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b17.PNG "cd")
+
 ### 2. Volumes zur persistenten Datenablage eingerichtet
 
 Docker-Container besitzen keinen persistenten Speicher, dass heisst löscht der Admin einen Container, sind alle darin enthaltenen Daten verloren. Zum Glück bietet Docker für das Problem eine Lösung an: Per Volume-Dienst lässt sich ein Container mit persistentem Speicher versorgen. 
