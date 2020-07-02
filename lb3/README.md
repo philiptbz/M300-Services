@@ -291,9 +291,10 @@ Die Benutzer wurden erstellt   | ![](https://github.com/philiptbz/M300-Services/
 Mysql wurde installiert und funktioniert | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b26.PNG "mysql status") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b27.PNG "mysql login")
 
 ## 4. Kriterium
-- [x] [1. Service-Überwachung ist eingerichtet &Aktive Benachrichtigung ist eingerichtet](#1-Service-überwachung-ist-eingerichtet-&-aktive-benachrichtigung-ist-eingerichtet)
+- [x] [1. Service-Überwachung ist eingerichtet & Aktive Benachrichtigung ist eingerichtet](#1-Service-überwachung-ist-eingerichtet-&-aktive-benachrichtigung-ist-eingerichtet)
 - [x] [2. Aspekte der Container-Absicherung](#3-aspekte-der-container-absicherung)
 - [x] [3. Sicherheitsmassnahmen sind dokumentiert](#4-sicherheitsmassnahmen-sind-dokumentiert)
+- [x] [4. Projekt mit Git und Markdown dokumentiert](#4-projekt-mit-git-und-markdown-dokumentiert)
 
 Nun geht es darum diese Container abzusichern. Es ist wichtig, dass Logging und Mitteilungen aktiviert sind. Das System muss dem Administrator behilflich sein. Im Ernstfall müssen Warnungen gesendet werden.
 
@@ -328,41 +329,36 @@ Der Kernel definiert Ressourcenbeschränkungen, die für Prozesse gesetzt werden
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b6.PNG "cd")
 
 
-### 3. Benutzer- und Rechtevergabe ist eingerichtet
-Als erstes erstellte ich Gruppenordner
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild17.png "cd")
-
-
-### 4. Sicherheitsmassnahmen sind dokumentiert
--   Lediglich der Port 80 des Web-Frontends und der Port 8080 der API wurden nach Aussen freigegeben.
--	Durch den Reverse Proxy sind die Devices im LAN von aussen nicht einsehbar.
--	Mit den strengen Firewall Regeln können wir das eindringen über offene Ports grösstenteils vermeiden.
+### 3. Sicherheitsmassnahmen sind dokumentiert
+-	Lediglich der Port 80 des Web-Frontends und der Port 8100 der API wurden nach Aussen freigegeben.
 -	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
+-   Der Zustand des Containers wird stets gemonitort und der Admin alamiert.
+-   Schutz gegen DoS sowie DDos-Attaken durch Speicher begrenzung
+
+Der Beweis, dass diese Massnahmen umgesetzt wurde bereits oberhalb im Markdown nachgewiesen.
+
+### 4. Projekt mit Git und Markdown dokumentiert
+Auch hier, finde ich, dass die einzelnen Schritte in diesem Markdown gut dokumentiert sind. Einige Dinge sind auch im Vagrant-File als Kommentar dokumentiert.
 
 
 ## 5. Kriterium
 - [x] [1. Kreativität](#1-kreativität)
 - [x] [2. Komplexität](#2-komplexität)
 - [x] [3. Umfang](#3-umfang)
-- [x] [4. Authentifizierung und Autorisierung via LDAP](#4-authentifizierung-und-autorisierung-via-ldap)
-- [x] [5. Vergleich Vorwissen - Wissenszuwachs](#6-vergleich-vorwissen---wissenszuwachs)
-- [x] [6. Reflexion](#7-reflexion)
+- [x] [4. Vergleich Vorwissen - Wissenszuwachs](#6-vergleich-vorwissen---wissenszuwachs)
+- [x] [5. Reflexion](#7-reflexion)
 
 ### 1. Kreativität
-Ich denke die Kreativität ist genügend hoch. In dieser Arbeit habe ich probiert möglichst alles selbst zu machen und meine eigene Gedanken umzusetzen. Es wurden viele verschiedene Dinge umgesetzt, weshalb ich die Kreativtät als erfüllt empfinde. 
+Ich denke die Kreativität ist genügend hoch. In dieser Arbeit habe ich probiert möglichst alles selbst zu machen und meine eigene Gedanken umzusetzen. Es wurden mehrere Services umgesetzt, weshalb ich die Kreativtät als erfüllt empfinde. Ich hätte noch einige Ideen gehabt, konnte diese jedoch aus Zeit technischen Gründen nicht umsetzen.
 
 ### 2. Komplexität
-Da ich mehrere verschiedene Dienste zur Verfügung gestellt habe, finde ich auch, dass mein Vagrant-File die Komplexität erfüllt. A
+Da ich mehrere verschiedene Dienste zur Verfügung gestellt habe, finde ich auch, dass mein Docker-File die Komplexität erfüllt. Aufgrund der nur begrenzten Zeit konnte ich die Komplexität nicht noch mehr erhöhen.
 
 ### 3. Umfang
-Wie bereits erwähnt setzte ich mehrere Dienste um, was sich auch in der länge der Vagrantfiles wiederspiegelt. Ich denke mit knapp 120 Zeilen ist die Umfang erfüllt.
+Wie bereits erwähnt setzte ich mehrere Dienste um, was sich auch in der länge des Dockerfiles wiederspiegelt. Ich denke für die kurze Zeit habe ich viel umgesetzt.  
 
-### 4. Authentifizierung und Autorisierung via LDAP
-Die 4. Authentifizierung und Autorisierung via LDAP wurde ab der Zeile 100 im Vagrant-File umgesetzt. 
+### 4. Vergleich Vorwissen - Wissenszuwachs
+Auch bei dieser Arbeit war mein Wissenzuwachs extrem. Wenn man überlegt, dass ich am Anfang des Moduls nicht eimal wusste wass Docker sowie Containerisierung ist, denke ich wird der Wissenzuwachs schnell ersichtlich. Anfangs der LB3, hätte ich mehr zeigt gebraucht um mich mit Docker vertraut zu machen. Mir raubte das einarbeiten viel Zeit und ich konnte deshalb nicht umsetzen was ich ursprünglich vorgehabt hatte. Trotzdem machte mir das Arbeiten mit Docker sehr viel Spass und der Wissenzuwachs war extrem. Mittlerweile kenne ich mich mit den Docker Befehlen aus und mein Wissen konnte sich vorallem in der Theorie stark erweitern.
 
-### 5. Vergleich Vorwissen - Wissenszuwachs
-Mein Wissenszuwachs ist eventuell nicht an der Dokumnentation ersichtlich. Wenn man jedoch überlegt, dass ich am Anfang des Moduls nicht eimal wusste wass Vagrant ist, denke ich wird der Wissenzuwachs schnell ersichtlich. Mir machte das Arbeiten mit Vagrant sehr viel Spass und der Wissenzuwachs war extrem. Mittlerweile bin ich in der Lage einige Dienste zu Automatisieren und kenne mich mit Vagrant ziehmlich gut aus.
-
-### 6. Reflexion
-Insgesamt hat mir die LB02 sehr gut gefallen. Am Anfang kannte ich die einzelnen Fachbegriffe zu diesem Thema nicht. Nun aber kann ich in vielen Gesprächen zu diesem Thema etwas dazu sagen. Ich bin sehr froh, dass ich diese Lernschritte gemacht habe und diese auch selber sehen kann. Ich werde sicherlich viel Stoff mitnehmen, welchen ich in dieser LB02 und in den jeweiligen Lektionen gelernt habe. Der Einstieg war etwas einfacher, da es sich hauptsächlich um die Einrichtung der Umgebung handelte. Da ich von einem vorherigen Module die einzelnen Tools bereits ein wenig kannte, fiel mir dies etwas leichert. Probleme mit Vagrant hatte ich bis jetzt eigentlich keine. Und wenn ich mal welche haben sollte, finde ich dazu sicherlich etwas im Internet oder kann mir womöglich sogar selber weiterhelfen. Auch in meiner Freizeit konnte ich zu Vagrant einige Dinge lernen. Ich habe einige Tutorials und Crash Courses auf YouTube angeschaut, welche mir auch weitergeholfen haben, um mein Vagrant-Script zu erweitern. Also in allem hat mir diese LB02 sehr viel Spass gemacht. 
+### 5. Reflexion
+Insgesamt hat mir die LB03 sehr gut gefallen. Am Anfang kannte ich sämtliche Fachbegriffe zu diesem Thema nicht. Nun aber kann ich in vielen Gesprächen zu diesem Thema mitreden. Ich bin sehr froh, dass ich diese Lernschritte gemacht habe. Ich werde sicherlich viel Stoff mitnehmen, welchen ich in dieser LB03 und in den jeweiligen Lektionen gelernt habe. Gerne hätte ich das Thema Containersisierung noch mehr vertieft und hätte auch mehr in LB3 umsetzen wollen. Aufgrund einiger Anfangsproblemen fehlte mir dazu jedoch einfach die Zeit. Auch in meiner Freizeit konnte ich zu DOcker einige Dinge lernen. Ich habe einige Tutorials und Crash Courses auf YouTube angeschaut, welche mir auch weitergeholfen haben, um mein Docker-Script zu erweitern. Also in allem hat mir diese LB02 sehr viel Spass gemacht. 
