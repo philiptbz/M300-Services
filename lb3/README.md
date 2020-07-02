@@ -171,6 +171,7 @@ Zu guterletzt startete ich den Service:
 `CMD /bin/bash -c "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGROUND"`
 
 **Mysql**
+
 Als zweiten Dienst wählte ich Mysql. Der erste Schritt war es die Vorkonfigurationen zu machen. Diese sind notwendig, damit kein Dialog erscheint und die Installation nicht stoppt.
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b10.PNG "mysql1")
