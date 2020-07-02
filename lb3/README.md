@@ -162,7 +162,9 @@ Danach machte ich einige Grundkonfigurationen
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b9.PNG "apache2")
 
 Zu guterletzt startete ich den Service:
+
 `RUN /etc/init.d/apache2 start`
+
 `CMD /bin/bash -c "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGROUND"`
 
 ### 2. Volumes zur persistenten Datenablage eingerichtet
