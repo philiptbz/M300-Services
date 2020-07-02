@@ -285,12 +285,10 @@ Mir war es wichtig alle primären Funktionen des Containers zu Testen. Diese Tes
 Testfall            | Resultat
 ----------------- | -------------
 Die Container kann gebuildet werden sowie es kann darauf zugegriffen werden.  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b20.PNG "build") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b21.PNG "run")
-Von dem Client ist der Zugriff auf den Webserver möglich. | Apache Server ist Running und es kann auf den Server von Lokal zugegriffen werden. ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t3.png "mysql status") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t4.png "mysql website")
-Die Firewall ist richtig konfiguriert und funktioniert.  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t5.png "ufw status")
-Die Gruppenordner wurden erstellt  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t6.png "grp")
-Die Benutzer wurden erstellt   | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t7.png "benutzer")
-Mysql wurde installiert und funktioniert | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t8.png "mysql status") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t9.png "mysql login")
-LDAP wurde eingerichtet und das einloggen ist möglich. | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t10.png "ldap website")
+Von der VM ist der Zugriff auf den Webserver möglich. | Apache Server ist Running und es kann auf den Server von Lokal zugegriffen werden. ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b22.PNG "apache status") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b23.PNG "apache website")
+Die Gruppen wurden erstellt  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b24.PNG "grp")
+Die Benutzer wurden erstellt   | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b25.PNG "benutzer")
+Mysql wurde installiert und funktioniert | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b26.PNG "mysql status") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b27.PNG "mysql login")
 
 ## 4. Kriterium
 - [x] [1. Service-Überwachung ist eingerichtet &Aktive Benachrichtigung ist eingerichtet](#1-Service-überwachung-ist-eingerichtet-&-aktive-benachrichtigung-ist-eingerichtet)
