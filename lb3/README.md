@@ -172,9 +172,9 @@ Mit den beiden folgenden Befehlen werden die beiden Container „db1“ und „d
 Volume löschen:
 `docker rm –v`
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b7.png "createvolume")
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b7.PNG "createvolume")
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b9.png "containeronvolume")
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b9.PNG "containeronvolume")
 
 ### 3. Volumes zur persistenten Datenablage eingerichtet
 **Netzwerkplan**
