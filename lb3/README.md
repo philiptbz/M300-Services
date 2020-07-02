@@ -155,7 +155,10 @@ Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festge
 
 Ich erstellte einen Dockercontainer der mehrere Services ausführt. Der erste Dienst den ich implementierte war ein Apache Dienst.
 Zuerst wird der Webserver installiert:
+
 `RUN apt-get -q -y install apache2`
+
+`RUN apt-get -y install apache2-utils`
 
 Danach machte ich einige Grundkonfigurationen 
 
@@ -166,6 +169,19 @@ Zu guterletzt startete ich den Service:
 `RUN /etc/init.d/apache2 start`
 
 `CMD /bin/bash -c "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGROUND"`
+
+**Mysql**
+Als zweiten Dienst wählte ich Mysql. Der erste Schritt war es die Vorkonfigurationen zu machen. Diese sind notwendig, damit kein Dialog erscheint und die Installation nicht stoppt.
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b10.PNG "mysql1")
+
+Anschliessend folgte der folgende Befehl für die Installation
+
+`RUN apt-get update && apt-get install -y mysql-server`
+
+Auch bei Mysql musste ich einige Konfigurationen vornehmen, wie z.B den Port für alle Hosts zu öffnen.
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b12.PNG "mysql2")
 
 ### 2. Volumes zur persistenten Datenablage eingerichtet
 
