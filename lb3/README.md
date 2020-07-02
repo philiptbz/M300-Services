@@ -174,7 +174,7 @@ Volume löschen:
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b7.PNG "createvolume")
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b9.PNG "containeronvolume")
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b8.PNG "containeronvolume")
 
 ### 3. Volumes zur persistenten Datenablage eingerichtet
 **Netzwerkplan**
