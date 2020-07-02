@@ -227,33 +227,7 @@ Volume löschen:
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b8.PNG "containeronvolume")
 
-### 3. Volumes zur persistenten Datenablage eingerichtet
-**Netzwerkplan**
-
-Logischer Netzwerkplan:
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild24.PNG "Netzwerkplan")
-
-Pysischer Netzwerkplan:
-Da wir hier mit einer Virtualisierung arbeiten, würde ein pysischer Netzwerkplan sehr mager aussehen. Die Firewall, der Proxy sowie der Web-Server sind keine pysische Geräte sondern befinden sich virtuell auf dem Laptop. 
-
-**Umgebungsvariabeln:**
-Zuerst müssen entweder im Explorer oder in der Git-Bash ins richtige Verzeichnis gewechselt werden.
-In meinem Falle befindet sich die VM, im Verzeichniss: C:\Daten\vm
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/bild23.png "cd")
-
-Danach kann die VM mit dem Befehl vagrant up gestartet werden.
-
-**Sicherheitsaspekte**
-
--	Lediglich der Port 80 des Web-Frontends und der Port 8080 der API wurden nach Aussen freigegeben.
--	Durch den Reverse Proxy sind die Devices im LAN von aussen nicht einsehbar.
--	Mit den strengen Firewall Regeln können wir das eindringen über offene Ports grösstenteils vermeiden.
--	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
-
-
-### 4. Kennt die Docker spezifischen Befehle
+### 3. Kennt die Docker spezifischen Befehle
 
 Befehl            | Funktion
 ----------------- | -------------
@@ -276,6 +250,32 @@ Befehl            | Funktion
 `/etc/init.d/apache2 status`	 | zeigt den Status des Apache Dienst an
 `/etc/init.d/mysql status`  | zeigt den Status des Mysql Dienstes an
 
+
+### 4. Eingerichtete Umgebung ist dokumentiert
+
+**Netzwerkplan**
+
+Logischer Netzwerkplan:
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b19.PNG "Netzwerkplan")
+
+Pysischer Netzwerkplan:
+Da wir hier mit einer Virtualisierung arbeiten, würde ein pysischer Netzwerkplan sehr mager aussehen. Die Firewall, der Proxy sowie der Web-Server sind keine pysische Geräte sondern befinden sich virtuell auf dem Laptop. 
+
+**Umgebungsvariabeln:**
+Zuerst müssen entweder im Explorer oder im Terminal ins richtige Verzeichnis gewechselt werden.
+In meinem Falle befindet sich das Dockerfile, im Verzeichniss: /home/user/documents
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b18.PNG "speicherort")
+
+Danach kann die VM mit dem Befehl vagrant up gestartet werden.
+
+**Sicherheitsaspekte**
+
+-	Lediglich der Port 80 des Web-Frontends und der Port 8080 der API wurden nach Aussen freigegeben.
+-	Durch den Reverse Proxy sind die Devices im LAN von aussen nicht einsehbar.
+-	Mit den strengen Firewall Regeln können wir das eindringen über offene Ports grösstenteils vermeiden.
+-	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
 
 
 ### 5. Eingerichtete Umgebung ist dokumentiert
