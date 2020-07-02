@@ -276,24 +276,15 @@ Danach kann die VM mit dem Befehl vagrant up gestartet werden.
 -	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
 -   Der Zustand des Containers wird stets gemonitort und der Admin alamiert.
 -   Schutz gegen DoS sowie DDos-Attaken durch Speicher begrenzung
--   
 
 
-### 5. Eingerichtete Umgebung ist dokumentiert
+### 5. Funktionsweise getestet inkl. Dokumentation der Testfälle
 
-Ich habe noch eine weitere VM auf dem Notebook aufgesetzt. Hierbei habe ich das Vagrant-File, welches unter dem folgenden Pfad liegt ausgeführt.
-
-https://github.com/mc-b/M300/tree/master/vagrant/db
-
-Diese VM habe ich mit dem Befehl `vagrant up` gestartet. Auch hier musste ich im Verzeichnis sein, in dem das Vagrant-File vorhanden war. 
-
-### 6. Funktionsweise getestet inkl. Dokumentation der Testfälle
-
-Mir war es wichtig alle primären Funktionen des Vagrantfiles zu Testen. Diese Tests sind unterhalb in der Tabelle mit Beweisen inform von Scrennshots
+Mir war es wichtig alle primären Funktionen des Containers zu Testen. Diese Tests sind unterhalb in der Tabelle mit Beweisen inform von Scrennshots ersichtlich.
 
 Testfall            | Resultat
 ----------------- | -------------
-Die VM kann via Vagrant aufgesetzt werden sowie über Vagrant auf die VM zugegriffen werden.  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t1.png "vagrant up") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t2.png "vagrant ssh")
+Die Container kann gebuildet werden sowie es kann darauf zugegriffen werden.  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b20.PNG "build") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b21.PNG "run")
 Von dem Client ist der Zugriff auf den Webserver möglich. | Apache Server ist Running und es kann auf den Server von Lokal zugegriffen werden. ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t3.png "mysql status") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t4.png "mysql website")
 Die Firewall ist richtig konfiguriert und funktioniert.  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t5.png "ufw status")
 Die Gruppenordner wurden erstellt  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/t6.png "grp")
