@@ -146,6 +146,7 @@ Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festge
 
 ## 3. Kriterium
 - [x] [1. Bestehenden Docker-Container kombinieren](#1-bestehenden-docker-container-kombinieren)
+- [x] [2. Bestehende Container als Backend, Desktop-App als Frontend einsetzen](#1-bestehende-container-als-backend,-desktop-app-als-frontend-einsetzen)
 - [x] [3. Volumes zur persistenten Datenablage eingerichtet](#3-volumes-zur-persistenten-datenablage-eingerichtet)
 - [x] [4. Kennt die Docker spezifischen Befehle](#4-kennt-die-docker-spezifischen-befehle)
 - [x] [5. Eingerichtete Umgebung ist dokumentiert](#5-eingerichtete-umgebung-ist-dokumentiert)
@@ -158,11 +159,18 @@ Für den Nextcloud Dienst haben wir die Mysql Datenbank mit dem Apache Webserver
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b30.PNG "cloud")
 
-**Apache**
+**Mysql & PHP**
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b31.PNG "apache")
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b31.PNG "php")
 
-### 2. Volumes zur persistenten Datenablage eingerichtet
+### 2. Bestehende Container als Backend, Desktop-App als Frontend einsetzen
+In unserem Fall ist der Container als Backend sowie als Frontend in Form von PHP & Mysql eingesetzt. PHP stellt in unserem Fall das Frontend dar, während Mysql das Backend ist. 
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b31.PNG "php")
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b32.PNG "mysql")
+
+### 3. Volumes zur persistenten Datenablage eingerichtet
 
 Docker-Container besitzen keinen persistenten Speicher, dass heisst löscht der Admin einen Container, sind alle darin enthaltenen Daten verloren. Zum Glück bietet Docker für das Problem eine Lösung an: Per Volume-Dienst lässt sich ein Container mit persistentem Speicher versorgen. 
 Container auf Volume erstellen:
@@ -182,7 +190,7 @@ Volume löschen:
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b8.PNG "containeronvolume")
 
-### 3. Kennt die Docker spezifischen Befehle
+### 4. Kennt die Docker spezifischen Befehle
 
 Befehl            | Funktion
 ----------------- | -------------
@@ -206,7 +214,7 @@ Befehl            | Funktion
 `/etc/init.d/mysql status`  | zeigt den Status des Mysql Dienstes an
 
 
-### 4. Eingerichtete Umgebung ist dokumentiert
+### 5. Eingerichtete Umgebung ist dokumentiert
 
 **Netzwerkplan**
 
@@ -233,7 +241,7 @@ Danach kann die VM mit dem Befehl docker build ersstellt werden.
 -   Schutz gegen DoS sowie DDos-Attaken durch Speicher begrenzung
 
 
-### 5. Funktionsweise getestet inkl. Dokumentation der Testfälle
+### 6. Funktionsweise getestet inkl. Dokumentation der Testfälle
 
 Mir war es wichtig alle primären Funktionen des Containers zu Testen. Diese Tests sind unterhalb in der Tabelle mit Beweisen inform von Scrennshots ersichtlich.
 
