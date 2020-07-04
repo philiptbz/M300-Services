@@ -344,4 +344,5 @@ Ich habe meine Dockerfiles auf mein GitHub-Account hochgeladen damit können and
 
 ### 3. Cloud-Integration
 Wir haben auch eine Cloud in unsere Umgebung eingebunden wir haben die Cloud nextcloud genommen. Diese ging sehr gut und wir konnten es einfach mit unserem Mysql und dem Apache verknüpfen.
+
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b30.PNG "cloud")
