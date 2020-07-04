@@ -154,7 +154,11 @@ Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festge
 ### 1. Bestehenden Docker-Container kombinieren
 Für den Nextcloud Dienst haben wir die Mysql Datenbank mit dem Apache Webserver kombiniert. 
 
+**Nextcloud**
+
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b30.PNG "cloud")
+
+**Apache**
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b31.PNG "apache")
 
