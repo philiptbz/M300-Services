@@ -145,67 +145,16 @@ Folgende Grafik zeigt der Aufbau von Microservices auf:
 Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festgehalten. Jedoch werde ich hier noch auf einige genauer eingehen. Anfangs hatte ich grosse Schwierigkeiten, da ich nicht genau wusste wass genau die Aufgabe ist. Ich brauchte einige Zeit bis ich mit der Dockerumgebung klar kam. Nach einigen Rückschlägen erzielte ich erste Fortschritte und kam immer besser zurecht. Auch das Fehlerbeheben hat mich stark weiter gebracht und ich konnte dadurch sehr viel lernen. Eigentlich bestand das ganze Projekt nur aus Lernschritten und es fehlt mir schwer, hier das wichtigste Zusammenzufassen. 
 
 ## 3. Kriterium
-- [x] [1. Mein Dockercontainer](#1-mein-dockercontainer)
-- [x] [2. Volumes zur persistenten Datenablage eingerichtet](#2-volumes-zur-persistenten-datenablage-eingerichtet)
-- [x] [3. Kennt die Docker spezifischen Befehle](#3-kennt-die-docker-spezifischen-befehle)
-- [x] [4. Eingerichtete Umgebung ist dokumentiert](#4-eingerichtete-umgebung-ist-dokumentiert)
-- [x] [5. Funktionsweise getestet inkl. Dokumentation der Testfälle](#5-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
+- [x] [1. Bestehenden Docker-Container kombinieren](#1-bestehenden-docker-container-kombinieren)
+- [x] [3. Volumes zur persistenten Datenablage eingerichtet](#3-volumes-zur-persistenten-datenablage-eingerichtet)
+- [x] [4. Kennt die Docker spezifischen Befehle](#4-kennt-die-docker-spezifischen-befehle)
+- [x] [5. Eingerichtete Umgebung ist dokumentiert](#5-eingerichtete-umgebung-ist-dokumentiert)
+- [x] [6. Funktionsweise getestet inkl. Dokumentation der Testfälle](#6-funktionsweise-getestet-inkl-dokumentation-der-testfälle)
 
-### 1. Mein Dockercontainer
+### 1. Bestehenden Docker-Container kombinieren
+Für den Nextcloud Dienst haben wir die Mysql Datenbank mit dem Apache Webserver kombiniert. 
 
-Ich erstellte einen Dockercontainer der mehrere Services ausführt. Der erste Dienst den ich implementierte war ein Apache Dienst.
-Zuerst wird der Webserver installiert:
-
-`RUN apt-get -q -y install apache2`
-
-`RUN apt-get -y install apache2-utils`
-
-Danach machte ich einige Grundkonfigurationen 
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b9.PNG "apache2")
-
-Zu guterletzt startete ich den Service:
-
-`RUN /etc/init.d/apache2 start`
-
-`CMD /bin/bash -c "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGROUND"`
-
-**Mysql**
-
-Als zweiten Dienst wählte ich Mysql. Der erste Schritt war es die Vorkonfigurationen zu machen. Diese sind notwendig, damit kein Dialog erscheint und die Installation nicht stoppt.
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b10.PNG "mysql1")
-
-Anschliessend folgte der folgende Befehl für die Installation
-
-`RUN apt-get update && apt-get install -y mysql-server`
-
-Auch bei Mysql musste ich einige Konfigurationen vornehmen, wie z.B den Port für alle Hosts zu öffnen.
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b12.PNG "mysql2")
-
-**Benutzer & Gruppen**
-
-Ebenfalls erstellte ich Benutzer und machte eine Rechtevergabe:
-Als erstes erstellte ich Gruppenordner
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b13.PNG "cd")
-
-Nun erstellte ich insgesamt zwei Benutzer:
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b14.PNG "cd")
-
-Da die rechtevergabe grundsätzlich viel sinnvoller und sicherer ist, wenn dies über eine Gruppe gemacht wird, erstellte ich Gruppen. 
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b15.PNG "cd")
-
-Nun fügte ich die Benutzer den Gruppen hinzu.
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b16.PNG "cd")
-
-Um nun den Gruppen auf deren Gruppenordner Berechtigung zu geben benutzte ich folgende Befehle:
-
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b17.PNG "cd")
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b30.png "Nextcloud")
 
 ### 2. Volumes zur persistenten Datenablage eingerichtet
 
@@ -268,7 +217,7 @@ In meinem Falle befindet sich das Dockerfile, im Verzeichniss: /home/user/docume
 
 ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b18.PNG "speicherort")
 
-Danach kann die VM mit dem Befehl vagrant up gestartet werden.
+Danach kann die VM mit dem Befehl docker build ersstellt werden.
 
 **Sicherheitsaspekte**
 
