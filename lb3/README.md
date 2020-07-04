@@ -320,13 +320,28 @@ Auch hier, finde ich, dass die einzelnen Schritte in diesem Markdown gut dokumen
 Ich denke die Kreativität ist genügend hoch. In dieser Arbeit habe ich probiert möglichst alles selbst zu machen und meine eigene Gedanken umzusetzen. Es wurden mehrere Services umgesetzt, weshalb ich die Kreativtät als erfüllt empfinde. Ich hätte noch einige Ideen gehabt, konnte diese jedoch aus Zeit technischen Gründen nicht umsetzen.
 
 ### 2. Komplexität
-Da ich mehrere verschiedene Dienste zur Verfügung gestellt habe, finde ich auch, dass mein Docker-File die Komplexität erfüllt. Aufgrund der nur begrenzten Zeit konnte ich die Komplexität nicht noch mehr erhöhen.
+Da ich mehrere verschiedene Dienste zur Verfügung gestellt habe, finde ich auch, dass meine Docker-Files die Komplexität erfüllt. Aufgrund der nur begrenzten Zeit konnte ich die Komplexität nicht noch mehr erhöhen. Ebenfalls denke ich wurde durch die Vernetzung der Container die Komplexität erhöht.
 
 ### 3. Umfang
-Wie bereits erwähnt setzte ich mehrere Dienste um, was sich auch in der länge des Dockerfiles wiederspiegelt. Ich denke für die kurze Zeit habe ich viel umgesetzt.  
+Wie bereits erwähnt setzte ich mehrere Dienste um, was sich auch in der länge der Dockerfiles wiederspiegelt. Ich denke für die kurze Zeit habe ich viel umgesetzt. Ebenfalls haben wir bei den Sicherheitsaspekten viel umgsetzt und einiges an Umfang erarbeitet. 
 
 ### 4. Vergleich Vorwissen - Wissenszuwachs
 Auch bei dieser Arbeit war mein Wissenzuwachs extrem. Wenn man überlegt, dass ich am Anfang des Moduls nicht eimal wusste wass Docker sowie Containerisierung ist, denke ich wird der Wissenzuwachs schnell ersichtlich. Anfangs der LB3, hätte ich mehr zeigt gebraucht um mich mit Docker vertraut zu machen. Mir raubte das einarbeiten viel Zeit und ich konnte deshalb nicht umsetzen was ich ursprünglich vorgehabt hatte. Trotzdem machte mir das Arbeiten mit Docker sehr viel Spass und der Wissenzuwachs war extrem. Mittlerweile kenne ich mich mit den Docker Befehlen aus und mein Wissen konnte sich vorallem in der Theorie stark erweitern.
 
 ### 5. Reflexion
-Insgesamt hat mir die LB03 sehr gut gefallen. Am Anfang kannte ich sämtliche Fachbegriffe zu diesem Thema nicht. Nun aber kann ich in vielen Gesprächen zu diesem Thema mitreden. Ich bin sehr froh, dass ich diese Lernschritte gemacht habe. Ich werde sicherlich viel Stoff mitnehmen, welchen ich in dieser LB03 und in den jeweiligen Lektionen gelernt habe. Gerne hätte ich das Thema Containersisierung noch mehr vertieft und hätte auch mehr in LB3 umsetzen wollen. Aufgrund einiger Anfangsproblemen fehlte mir dazu jedoch einfach die Zeit. Auch in meiner Freizeit konnte ich zu DOcker einige Dinge lernen. Ich habe einige Tutorials und Crash Courses auf YouTube angeschaut, welche mir auch weitergeholfen haben, um mein Docker-Script zu erweitern. Also in allem hat mir diese LB02 sehr viel Spass gemacht. 
+Insgesamt hat mir die LB03 sehr gut gefallen. Am Anfang kannte ich sämtliche Fachbegriffe zu diesem Thema nicht. Nun aber kann ich in vielen Gesprächen zu diesem Thema mitreden. Ich bin sehr froh, dass ich diese Lernschritte gemacht habe. Ich werde sicherlich viel Stoff mitnehmen, welchen ich in dieser LB03 und in den jeweiligen Lektionen gelernt habe. Gerne hätte ich das Thema Containersisierung noch mehr vertieft und hätte auch mehr in LB3 umsetzen wollen. Aufgrund einiger Anfangsproblemen fehlte mir dazu jedoch einfach die Zeit. Auch in meiner Freizeit konnte ich zu DOcker einige Dinge lernen. Ich habe einige Tutorials und Crash Courses auf YouTube angeschaut, welche mir auch weitergeholfen haben, um mein Docker-Umgebung zu erweitern. Also in allem hat mir diese LB03 sehr viel Spass gemacht. 
+
+## 6. Kriterium
+- [x] [1. Umfangreiche Vernetzung der Container-Infrastruktur](#1-umfangreiche-vernetzung-der-container-infrastruktur)
+- [x] [2. Image-Bereitstellung](#2-image-bereitstellung)
+- [x] [3. Cloud-Integration](#3-cloud-integration)
+
+### 1. Umfangreiche Vernetzung der Container-Infrastruktur
+Wie bereits oberhalb erwähnt vernetzte ich unsere Container untereinander. Einerseitz benutz der Nextcloud Container die Dienstleistungungen des Mysql sowie des Apache Containers. Zusätzlich benutzt der cAdvisor die Informationen aller Container und werter sie aus.
+
+### 2. Image-Bereitstellung
+Ich habe meine Dockerfiles auf mein GitHub-Account hochgeladen damit können andere mein Image einsehen und es für ihre Zwecke benutzen. 
+
+### 3. Cloud-Integration
+Wir haben auch eine Cloud in unsere Umgebung eingebunden wir haben die Cloud nextcloud genommen. Diese ging sehr gut und wir konnten es einfach mit unserem Mysql und dem Apache verknüpfen.
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b30.PNG "cloud")
