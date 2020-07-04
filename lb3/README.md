@@ -248,10 +248,12 @@ Mir war es wichtig alle primären Funktionen des Containers zu Testen. Diese Tes
 Testfall            | Resultat
 ----------------- | -------------
 Die Container kann gebuildet werden sowie es kann darauf zugegriffen werden.  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b20.PNG "build") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b21.PNG "run")
-Von der VM ist der Zugriff auf den Webserver möglich. | Apache Server ist Running und es kann auf den Server von Lokal zugegriffen werden. ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b22.PNG "apache status") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b23.PNG "apache website")
-Die Gruppen wurden erstellt  | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b24.PNG "grp")
-Die Benutzer wurden erstellt   | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b25.PNG "benutzer")
 Mysql wurde installiert und funktioniert | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b26.PNG "mysql status") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b27.PNG "mysql login")
+Es kann auf PHP Myadmin von der VM aus zugegriffen werden | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b31.PNG "php")
+Nextcloud kann aufgerufen werden | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b30.PNG "cloud")
+Cadvisor funktioniert und kann aufgrufen werden | ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b28.PNG "cloud") ![](https://github.com/philiptbz/M300-Services/blob/master/Images/b29.PNG "cloud")
+
+
 
 ## 4. Kriterium
 - [x] [1. Service-Überwachung ist eingerichtet & Aktive Benachrichtigung ist eingerichtet](#1-Service-überwachung-ist-eingerichtet-&-aktive-benachrichtigung-ist-eingerichtet)
