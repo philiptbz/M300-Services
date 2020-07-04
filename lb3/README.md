@@ -154,7 +154,7 @@ Ich denke ein grossteil meiner Lernschritte habe ich bereits im Mark Down festge
 ### 1. Bestehenden Docker-Container kombinieren
 Für den Nextcloud Dienst haben wir die Mysql Datenbank mit dem Apache Webserver kombiniert. 
 
-![](https://github.com/philiptbz/M300-Services/blob/master/Images/b30.PNG "Nextcloud")
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b30.PNG "createvolume")
 
 ### 2. Volumes zur persistenten Datenablage eingerichtet
 
