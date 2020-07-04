@@ -263,12 +263,14 @@ Cadvisor funktioniert und kann aufgrufen werden | ![](https://github.com/philipt
 
 Nun geht es darum diese Container abzusichern. Es ist wichtig, dass Logging und Mitteilungen aktiviert sind. Das System muss dem Administrator behilflich sein. Im Ernstfall müssen Warnungen gesendet werden.
 
-### 1. Service-Überwachung ist eingerichtet & Aktive Benachrichtigung
+### 1. Sicherheitsaspekte sind implementiert / Service-Überwachung ist eingerichtet & Aktive Benachrichtigung
 Eine gute Monitoring-Lösung sollte auf einen Blick den Zustand des Systems zeigen und rechtzeitig warnen, wenn Ressourcen knapp werden. Docker Tools cAdvisor von Google ist das am häufigsten eingesetzte Monitoring-Tool für Docker.
 
 Dieses Programm ist als Container verfügbar und man kann darauf zugreifen. Der folgende Command muss dazu aktiviert werden:
 
 `docker run -d --name cadvisor -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys:ro -v /var/lib/docker/:/var/lib/docker:ro -p 8080:8080 google/cadvisor:latest`
+
+![](https://github.com/philiptbz/M300-Services/blob/master/Images/b29.PNG "cloud")
 
 ### 2.Aspekte der Container-Absicherung
 ch habe folgende weitere Sicherheitsaspekte für meine Container realisiert:
@@ -296,9 +298,10 @@ Der Kernel definiert Ressourcenbeschränkungen, die für Prozesse gesetzt werden
 
 ### 3. Sicherheitsmassnahmen sind dokumentiert
 -	Lediglich der Port 80 des Web-Frontends und der Port 8100 der API wurden nach Aussen freigegeben.
--	Nur bestimmte Nutzer verfügen über einen Zugriff auf die wichtigen Verzeichnisse, was die Integrität schützt.
 -   Der Zustand des Containers wird stets gemonitort und der Admin alamiert.
 -   Schutz gegen DoS sowie DDos-Attaken durch Speicher begrenzung
+-   Ein Dienst kann nicht unbgrenzt neugestartet werden und so den Container nicht überlasten
+-   Ebenfalls werden die Ressourcen der Prozesse beschränkt, um den Container ebenfalls nicht zu überlasten
 
 Der Beweis, dass diese Massnahmen umgesetzt wurde bereits oberhalb im Markdown nachgewiesen.
 
