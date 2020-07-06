@@ -340,7 +340,8 @@ Insgesamt hat mir die LB03 sehr gut gefallen. Am Anfang kannte ich sämtliche Fa
 Wie bereits oberhalb erwähnt vernetzte ich unsere Container untereinander. Einerseitz benutz der Nextcloud Container die Dienstleistungungen des Mysql sowie des Apache Containers. Zusätzlich benutzt der cAdvisor die Informationen aller Container und werter sie aus.
 
 ### 2. Image-Bereitstellung
-Ich habe meine Dockerfiles auf mein GitHub-Account hochgeladen damit können andere mein Image einsehen und es für ihre Zwecke benutzen. 
+Ich habe meine Dockerfiles auf mein GitHub-Account hochgeladen damit können andere mein Image einsehen und es für ihre Zwecke benutzen.
+https://github.com/philiptbz/M300-Services/tree/master/lb3 
 
 ### 3. Cloud-Integration
 Wir haben auch eine Cloud in unsere Umgebung eingebunden wir haben die Cloud nextcloud genommen. Diese ging sehr gut und wir konnten es einfach mit unserem Mysql und dem Apache verknüpfen.
