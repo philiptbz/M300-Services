@@ -1,0 +1,29 @@
+#Composefile Php und MySQL
+# Version des Docker Containers 
+version: '3.3'
+
+services:
+# installation und Konfiguration der Datenbank
+  db:
+    image: mysql
+# setzen des default Passwortes
+    command: --default-authentication-plugin=mysql_native_password
+# festsetzen des restarten des Dienstes
+    restart: always
+# synchronisiert das DB Verzeichnis mit dem verzeichnis auf dem Container 
+    volumes: 
+      - ./db:/var/lib/mysql 
+# setzen des Root passwortes 
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+# installation und Konfiguration der Datenbank
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+# Ports zum erreichen des Dienstes festlegen
+    ports:
+      - 8080:80
+    restart: always
+    environment: 
+      PMA_HOST: db
+    

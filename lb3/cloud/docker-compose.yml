@@ -1,0 +1,39 @@
+#Composefile NextCloud
+# Version des Docker composers
+version: '3.3'
+services:
+
+  db:
+# Installation und Konfiguration der Datenbank
+    image: mariadb
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+# Darf immer neustarten
+    restart: always
+# synchronisiert das DB Verzeichnis mit dem verzeichnis auf dem Container 
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+# Setzen der User und der Passwörter
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "nextcloud"
+      MYSQL_USER: "nextcloud"
+      MYSQL_PASSWORD: "root"
+
+  app:
+# Installation und Konfiguration von Nextcloud
+    image: nextcloud
+# Festlegen der erreichbaren Ports
+    ports:
+      - 8100:80
+# defnieren des Volumes
+    volumes:
+      - ./nextcloud:/var/www/html
+    restart: always
+#Festlegen der Benutzer und der Passwörter
+    environment: 
+        MYSQL_HOST: "db"
+        MYSQL_DATABASE: "nextcloud"
+        MYSQL_USER: "nextcloud"
+        MYSQL_PASSWORD: "root"
+        NEXTCLOUD_ADMIN_USER: "admin"
+        NEXTCLOUD_ADMIN_PASSWORD: "root"
